@@ -1,0 +1,4 @@
+# Translations are edited on every kind of machine; git stores them with LF
+# whatever the contributor's editor saves, so a changed line shows as one
+# changed line and not as the whole file.
+* text=auto eol=lf
