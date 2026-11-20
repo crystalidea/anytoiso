@@ -70,12 +70,6 @@
         <LiteVersionLimitText>La versione lite di AnyToISO funziona solo con &lt;b&gt;immagini CD;/b&gt; (fino a 870 MB). Per funzionare con file più grandi (DVD ed altri) dovresti &lt;a href="acquistare"&gt;&gt;Acquistare la versione Professional&lt;/a&gt;. Riceverai il codice di registrazione &lt;a href="sblocco"&gt;per sbloccare il software&lt;/a&gt; dopo l'acquisto.</LiteVersionLimitText>
         <buttonPurchasePro>Acquista versione Pro...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Inserisci codice registrazione</Caption>
-        <EnterKeyToUpgradeText>Inserisci i dati di registrazione per passare alla versione Pro di AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Nome registrazione:</RegName>
-        <RegCode>Codice registrazione:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Informazioni su AnyToISO</Caption>
         <Website>Sito web:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Lo spazio disponibile nell'unità selezionata è insufficiente (solo %1). \n\nVuoi proseguire?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Il file ISO di destinazione\n%1\nesiste già. Vuoi sovrascriverlo?</ISOAlreadyExists>
         <FolderAlreadyExists>La cartella di destinazione\n%1\nesiste già. Vuoi sovrascrivere tutti i file esistenti che hanno lo stesso nome?</FolderAlreadyExists>
-        <RestartProgram>Per completare la registrazione è necessario riavviare il programma. \n\nVuoi riavviarlo adesso?</RestartProgram>
         <CancelOperation>Sei sicuro di voler interrompere l'operazione in corso?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Sì</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Sblocca versione Pro</title>
+            <infoText>Inserisci l'indirizzo email con cui hai acquistato %1 e la licenza riportata nella ricevuta per sbloccare tutte le funzioni Pro.</infoText>
+            <licenseVerifyInfo>Le informazioni che inserisci potranno essere verificate via internet.</licenseVerifyInfo>
+            <email>Indirizzo email</email>
+            <licenseKey>Licenza</licenseKey>
+            <buttonUnlock>Sblocca</buttonUnlock>
+            <buttonRestoreLicense>Ripristina licenza</buttonRestoreLicense>
+            <invalidLicenseTitle>Licenza non valida!</invalidLicenseTitle>
+            <invalidLicenseText>Assicurati che tutte le lettere, i numeri e i segni siano immessi nell'ordine corretto. Piuttosto che inserirli a mano, meglio fare copia-incolla dalla email ricevuta.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Questa licenza è valida ma non può essere usata su %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Grazie per aver acquistato %1 Pro</thanksTitle>
+            <thanksInfo>Tutte le limitazioni della versione gratuita sono state rimosse, speriamo che apprezzerete l'uso della nostra app!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

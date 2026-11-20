@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Die Lite-Version von AnyToISO arbeitet &lt;b&gt;nur mit CD-Abbildern&lt;/b&gt; (bis zu 870 MB). Um mit größeren Dateien zu arbeiten (DVD und anderes), müssen Sie &lt;a href="purchase"&gt;die Professional-Version kaufen&lt;/a&gt;. Sie werden einen Registrierungsschlüssel erhalten, um die &lt;a href="unlock"&gt;Software freizuschalten.&lt;/a&gt;</LiteVersionLimitText>
         <buttonPurchasePro>Pro-Version kaufen...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Registrierungscode eingeben</Caption>
-        <EnterKeyToUpgradeText>Bitte die Registierungsdaten eingeben, um auf die Pro-Version von AnyToISO zu aktualisieren.</EnterKeyToUpgradeText>
-        <RegName>Registrierungsname:</RegName>
-        <RegCode>Registrierungscode:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Über AnyToISO</Caption>
         <Website>Webseite:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Es ist nicht genug Speicher (nur %1) auf dem ausgewählten Laufwerk verfügbar.\n\nMöchten sie fortfahren?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Die Ziel-ISO-Datei\n%1\nexistiert bereits, möchten Sie diese überschreiben?</ISOAlreadyExists>
         <FolderAlreadyExists>Zielordner\n%1\nexistiert bereits, möchten sie alle existierenden Dateien mit dem gleichen Namen überschreiben?</FolderAlreadyExists>
-        <RestartProgram>Um die Registierung abzuschließen, muss das Programm neu gestartet werden. \n\nMöchten sie das Programm jetzt neu starten?</RestartProgram>
         <CancelOperation>Sind Sie sicher, dass sie die laufende Operation abbrechen möchten?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Ja</buttonYes>
             <buttonNo>Nein</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Pro-Version freischalten</title>
+            <infoText>Geben Sie die E-Mail-Adresse, mit der Sie %1 gekauft haben, und den Lizenzschlüssel aus Ihrer Kaufbestätigung ein, um alle Pro-Funktionen freizuschalten.</infoText>
+            <licenseVerifyInfo>Die von Ihnen eingegebenen Informationen können über das Internet überprüft werden.</licenseVerifyInfo>
+            <email>E-Mail Adresse</email>
+            <licenseKey>Lizenzschlüssel</licenseKey>
+            <buttonUnlock>Freischalten</buttonUnlock>
+            <buttonRestoreLicense>Lizenz wiederherstellen</buttonRestoreLicense>
+            <invalidLicenseTitle>Ungültige Lizenz!</invalidLicenseTitle>
+            <invalidLicenseText>Achten Sie darauf, dass alle Buchstaben, Zahlen und Striche in der richtigen Reihenfolge eingegeben werden. Wenn Sie die Nummer von Hand eingeben, versuchen Sie stattdessen, sie aus Ihrem E-Mail-Empfang zu kopieren und einzufügen.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Dieser Lizenzschlüssel ist gültig, aber nicht für die Nutzung unter %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Vielen Dank, dass Sie sich für den Kauf von %1 Pro entschieden haben.</thanksTitle>
+            <thanksInfo>Alle Einschränkungen der kostenlosen Version wurden aufgehoben. Wir wünschen Ihnen viel Spaß bei der Nutzung der App!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

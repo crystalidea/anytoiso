@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Versiunea Lite (gratuită) a AnyToISO funcționează &lt;b&gt;doar cu imagini CD&lt;/b&gt; (de până la 870 MB). Pentru a lucra cu fișiere mai mari (DVD sau de capacitate mai mare), trebuie să &lt;a href="purchase"&gt;Cumpărați versiunea Profesională&lt;/a&gt;. Veți obține Codul de Înregistrare ce va &lt;a href="unlock"&gt;debloca aplicația&lt;/a&gt; imediat după cumpărare.</LiteVersionLimitText>
         <buttonPurchasePro>Cumpără versiunea Profesională...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Introdu Codul de Înregistrare</Caption>
-        <EnterKeyToUpgradeText>Introdu datele de înregistrare pentru a activa versiunea PRO a AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Numele:</RegName>
-        <RegCode>Codul de Înregistrare:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Despre AnyToISO</Caption>
         <Website>Website:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Aparent nu există suficient spațiu de stocare pe disc (disponibil doar %1). \n\nDorești să continui?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Fișierul ISO destinație\n%1\nexistă deja, dorești să-l suprascri?</ISOAlreadyExists>
         <FolderAlreadyExists>Directorul destinație\n%1\nexistă deja, dorești să suprascri toate fișierele care au același nume?</FolderAlreadyExists>
-        <RestartProgram>Pentru a finaliza procedura de înregistrare, trebuie să reporniți aplicația. \n\nDorești să repornești aplicația acum?</RestartProgram>
         <CancelOperation>Ești sigur că vrei să inchizi aplicația?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Deblochează versiunea Pro</title>
+            <infoText>Introduceți adresa de e-mail folosită la cumpărarea aplicației %1 și cheia de licență din chitanță pentru a debloca toate funcțiile Pro.</infoText>
+            <licenseVerifyInfo>Informațiile introduse pot fi verificate prin internet.</licenseVerifyInfo>
+            <email>Adresă de e-mail</email>
+            <licenseKey>Cheie de licență</licenseKey>
+            <buttonUnlock>Deblochează</buttonUnlock>
+            <buttonRestoreLicense>Recuperează licența</buttonRestoreLicense>
+            <invalidLicenseTitle>Licență nevalidă!</invalidLicenseTitle>
+            <invalidLicenseText>Asigurați-vă că toate literele, cifrele și liniuțele sunt introduse în ordinea corectă. Dacă tastați caracterele manual, încercați în schimb să le copiați și să le lipiți din chitanța primită pe e-mail.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Această cheie de licență este validă, dar nu este destinată utilizării pe %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Vă mulțumim că ați cumpărat %1 Pro</thanksTitle>
+            <thanksInfo>Toate limitările versiunii gratuite au fost eliminate. Sperăm că vă va plăcea să folosiți aplicația!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

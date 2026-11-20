@@ -70,12 +70,6 @@
         <LiteVersionLimitText>AnyToISO Lite versiju, kas darbojas ar &lt;b&gt;CD tikai fotografēšanas&lt;/b&gt; (līdz 870 MB). Lai strādātu ar lielākiem failiem (DVD un vairāk) ir &lt;a href="purchase"&gt;Pirkšanas profesionālā versija&lt;/a&gt;. Būs jāiegūst reģistrācijas kods &lt;a href="unlock"&gt;apgūstot programmatūru&lt;/a&gt; pēc tam, kad pirkšanas.</LiteVersionLimitText>
         <buttonPurchasePro>Pērk Pro versija...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Ievadiet reģistrācijas kods</Caption>
-        <EnterKeyToUpgradeText>Lūdzu, ievadiet savu reģistrācijas informāciju Pro versiju jaunināt AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Reģistrācijas vārds:</RegName>
-        <RegCode>Reģistrācijas kods:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Par AnyToISO</Caption>
         <Website>Mājas lapa:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Izskatās, ka nav pietiekami daudz brīvas vietas diskā (tikai %1) izvēlētajā draivā. \n\nVai vēlaties turpināt?</NotEnoughDiskSpace>
         <ISOAlreadyExists>ISO failu mērķa\n%1\nalready pastāv, vai vēlaties to pārrakstīt?</ISOAlreadyExists>
         <FolderAlreadyExists>Mērķa mape\n%1\nalready pastāv, vai vēlaties pārrakstīt visus esošos failus ar tādu pašu nosaukumu?</FolderAlreadyExists>
-        <RestartProgram>Lai pabeigtu reģistrāciju, ir jārestartē programma. \n\nVai vēlaties to darīt tūlīt?</RestartProgram>
         <CancelOperation>Vai tiešām vēlaties pārtraukt pašreizējo operāciju?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Atbloķēt Pro versiju</title>
+            <infoText>Ievadiet e-pasta adresi, kuru izmantojāt, iegādājoties programmu %1, un licences atslēgu no pirkuma kvīts, lai atbloķētu visas Pro funkcijas.</infoText>
+            <licenseVerifyInfo>Ievadīto informāciju var pārbaudīt internetā.</licenseVerifyInfo>
+            <email>E-pasta adrese</email>
+            <licenseKey>Licences atslēga</licenseKey>
+            <buttonUnlock>Atbloķēt</buttonUnlock>
+            <buttonRestoreLicense>Atjaunot licenci</buttonRestoreLicense>
+            <invalidLicenseTitle>Nederīga licence!</invalidLicenseTitle>
+            <invalidLicenseText>Pārliecinieties, ka visi burti, cipari un defises ir ievadīti pareizā secībā. Ja rakstzīmes ievadāt manuāli, mēģiniet tās nokopēt un ielīmēt no e-pastā saņemtās kvīts.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Šī licences atslēga ir derīga, taču nav paredzēta lietošanai operētājsistēmā %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Paldies, ka iegādājāties %1 Pro</thanksTitle>
+            <thanksInfo>Visi bezmaksas versijas ierobežojumi ir noņemti. Ceram, ka jums patiks lietot šo programmu!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

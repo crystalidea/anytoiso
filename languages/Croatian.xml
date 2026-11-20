@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Lite verzija AnyToISO radi samo s &lt;b&gt;CD slikama&lt;/b&gt; (do 870 MB). Da bi radili s većim datotekama (DVD i više) bi trebali &lt;a href="purchase"&gt;kupite profesionalnu verziju&lt;/a&gt;. Nakon kupnje dobivate registracijski kod &lt;a href="unlock"&gt;za otključavanje programa&lt;/a&gt;.</LiteVersionLimitText>
         <buttonPurchasePro>Kupi Pro verziju...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Unos registracijskog ključa</Caption>
-        <EnterKeyToUpgradeText>Molimo unesite Vaše podatke za registraciju kako bi mogli koristiti Pro verziju AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Registracijsko ime:</RegName>
-        <RegCode>Registracijski kod:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>O AnyToISO</Caption>
         <Website>Web stranica:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Izgleda kao da nema dovoljno slobodnog prostora na disku (samo %1) na odabranom disku. \n\nŽelite nastaviti?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Odredište ISO datoteke\n%1\nveć postoji, želite prepisati?</ISOAlreadyExists>
         <FolderAlreadyExists>Odredišna mapa\n%1\nveć postoji, želite prepisati sve postojeće datoteke s istim nazivom?</FolderAlreadyExists>
-        <RestartProgram>Da biste dovršili registraciju morate ponovno pokrenuti program. \n\nŽelite sada?</RestartProgram>
         <CancelOperation>Jeste li sigurni da želite prekinuti trenutnu radnju?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Otključavanje Pro verzije</title>
+            <infoText>Unesite adresu e-pošte koju ste koristili pri kupnji programa %1 i licencni ključ s računa kako biste otključali sve Pro značajke.</infoText>
+            <licenseVerifyInfo>Uneseni podaci mogu se provjeriti putem interneta.</licenseVerifyInfo>
+            <email>Adresa e-pošte</email>
+            <licenseKey>Licencni ključ</licenseKey>
+            <buttonUnlock>Otključaj</buttonUnlock>
+            <buttonRestoreLicense>Vrati licencu</buttonRestoreLicense>
+            <invalidLicenseTitle>Nevažeća licenca!</invalidLicenseTitle>
+            <invalidLicenseText>Provjerite jeste li sva slova, brojke i crtice unijeli ispravnim redoslijedom. Ako znakove upisujete ručno, pokušajte ih radije kopirati iz računa primljenog e-poštom i zalijepiti.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Ovaj licencni ključ je valjan, ali nije namijenjen za upotrebu na sustavu %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Hvala na kupnji programa %1 Pro</thanksTitle>
+            <thanksInfo>Sva ograničenja besplatne verzije su uklonjena. Nadamo se da ćete uživati u korištenju programa!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Lite version of AnyToISO works with &lt;b&gt;CD images only&lt;/b&gt; (up to 870 MB). In order to work with larger files (DVD and more) you should &lt;a href="purchase"&gt;Purchase Professional version&lt;/a&gt;. You'll obtain the registration code &lt;a href="unlock"&gt;unlocking the software&lt;/a&gt; after the purchase.</LiteVersionLimitText>
         <buttonPurchasePro>Osta Pro Version...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Sisesta registreerimise kood</Caption>
-        <EnterKeyToUpgradeText>Palun sisestage registreerimisandmed,et uuendada AnyToISO Pro versioonini .</EnterKeyToUpgradeText>
-        <RegName>Registreerimise nimi:</RegName>
-        <RegCode>Registreerimise kood:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Teave AnyToISO kohta</Caption>
         <Website>Võrguleht:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Tundub, et ei ole piisavalt vaba kettaruumi (ainult %1) valitud kettal. \n\nKas sa soovid jätkata?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Sihtkoha ISO fail\n%1\non olemas, kas soovid selle üle kirjutada?</ISOAlreadyExists>
         <FolderAlreadyExists>Sihtkoha kaust\n%1\non olemas, kas soovid kõik olemasolevad sama nimega failid üle kirjutada?</FolderAlreadyExists>
-        <RestartProgram> Registreerimise lõpetamiseks peate programmile tegema restardi. \n\nKas sa soovid seda kohe teha?</RestartProgram>
         <CancelOperation>Olete kindel, et soovite lõpetada praeguse operatsiooni?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Ava Pro-versioon</title>
+            <infoText>Sisesta e-posti aadress, mida kasutasid rakenduse %1 ostmisel, ja ostukinnituses olev litsentsivõti, et avada kõik Pro-funktsioonid.</infoText>
+            <licenseVerifyInfo>Sisestatud andmeid võidakse kontrollida interneti kaudu.</licenseVerifyInfo>
+            <email>E-posti aadress</email>
+            <licenseKey>Litsentsivõti</licenseKey>
+            <buttonUnlock>Ava lukust</buttonUnlock>
+            <buttonRestoreLicense>Taasta litsents</buttonRestoreLicense>
+            <invalidLicenseTitle>Kehtetu litsents!</invalidLicenseTitle>
+            <invalidLicenseText>Veendu, et kõik tähed, numbrid ja sidekriipsud on sisestatud õiges järjekorras. Kui trükid märke käsitsi, proovi need hoopis ostukinnituse e-kirjast kopeerida ja kleepida.</invalidLicenseText>
+            <invalidLicenseMismatchOS>See litsentsivõti on kehtiv, kuid pole mõeldud kasutamiseks operatsioonisüsteemis %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Täname, et ostsid %1 Pro</thanksTitle>
+            <thanksInfo>Kõik tasuta versiooni piirangud on eemaldatud. Loodame, et naudid rakenduse kasutamist!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

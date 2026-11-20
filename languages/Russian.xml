@@ -40,6 +40,7 @@
             <buttonRefresh>Обновить</buttonRefresh>
             <buttonBrowseISO>Открыть...</buttonBrowseISO>
             <NoDiskInserted>Не найден CD/DVD дисковод с диском</NoDiskInserted>
+            <LoadingDrives>Загрузка списка оптических приводов...</LoadingDrives>
             <buttonMakeISO>Создать ISO</buttonMakeISO>
             <buttonMakeBinCue>Создавать BIN/CUE образ</buttonMakeBinCue>
             <chooseISOOrBinCueImage>Пожалуйста выберите ISO или BIN/CUE образ</chooseISOOrBinCueImage>
@@ -70,12 +71,15 @@
         <LiteVersionLimitText>Lite версия AnyToISO работает только с &lt;b&gt;CD образами&lt;/b&gt; (до 870 MБ). Чтобы работать с большими файлами (DVD и больше) вам следует &lt;a href="purchase"&gt;Купить Профессиональную версию&lt;/a&gt;. После покупки вы получите регистрационный код для &lt;a href="unlock"&gt;разблокировки программы&lt;/a&gt;.</LiteVersionLimitText>
         <buttonPurchasePro>Купить Pro версию...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Ввод регистрационного ключа</Caption>
-        <EnterKeyToUpgradeText>Введите регистрационные данные для апрейда до Pro версии программы.</EnterKeyToUpgradeText>
-        <RegName>Регистрационное Имя:</RegName>
-        <RegCode>Регистрационный Код:</RegCode>
-    </EnterKeyDialog>
+    <LicenseKey>
+        <NotPortable>Этот лицензионный ключ — для устанавливаемой версии AnyToISO. Переносной версии нужна переносная (portable) лицензия.</NotPortable>
+        <PortableTitle>AnyToISO перезапустится как переносная копия</PortableTitle>
+        <PortableText>Это переносная лицензия. Настройки и лицензию AnyToISO будет хранить в файле anytoiso_portable.ini рядом с программой, а не в реестре.</PortableText>
+        <Version3KeyTitle>Этот лицензионный ключ — для AnyToISO 3.x</Version3KeyTitle>
+        <Version3FoundTitle>Ваша лицензия AnyToISO 3</Version3FoundTitle>
+        <Version3UpgradeText>В AnyToISO 4 лицензионные ключи нового вида, и ключи версии 3 её не разблокируют.\n\nКак владелец лицензии AnyToISO 3, вы можете перейти на AnyToISO 4 со скидкой 50%.</Version3UpgradeText>
+        <Version3UpgradeButton>Купить со скидкой 50%</Version3UpgradeButton>
+    </LicenseKey>
     <AboutDialog>
         <Caption>О программе AnyToISO</Caption>
         <Website>Сайт:</Website>
@@ -104,7 +108,7 @@
         <NotEnoughDiskSpace>Похоже, что на выбранном диске не достаточно свободного места (всего %1). \n\nВы хотите все равно продолжить?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Конечный ISO файл\n%1\nуже существует, вы хотите перезаписать его?</ISOAlreadyExists>
         <FolderAlreadyExists>Конечная папка\n%1\nуже существует, вы хотите перезаписать все существующие файлы с одинаковыми именами?</FolderAlreadyExists>
-        <RestartProgram>Для завершения регистрации вы должны перезапустить программу. \n\nХотите сделать это сейчас?</RestartProgram>
+        <FilesAlreadyExist>Эти файлы назначения уже существуют:\n%1\nПерезаписать их?</FilesAlreadyExist>
         <CancelOperation>Вы действительно хотите прервать текущую операцию?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -119,6 +123,10 @@
         <ISOImageTypeFound>Найден ISO образ (тип %1)</ISOImageTypeFound>
         <CannotOpenSourceFile>Не могу открыть исходный файл</CannotOpenSourceFile>
         <CannotOpenDestFile>Не могу открыть конечный файл.</CannotOpenDestFile>
+        <DestinationNotSpecified>Не указан путь назначения</DestinationNotSpecified>
+        <DestinationIsFolder>Путь назначения %1 — это папка, укажите имя файла образа</DestinationIsFolder>
+        <DestinationIsFile>Путь назначения %1 — это файл, укажите папку</DestinationIsFile>
+        <OutputIsSource>Файл результата не может быть исходным образом или одним из его файлов</OutputIsSource>
         <OperationTerminated>Процесс прерван пользователем.</OperationTerminated>
         <OperationCompleted>Операция завершена.</OperationCompleted>
         <ClickToOpenISOInExplorer>Нажмите &lt;a href="_open_local_file"&gt;здесь&lt;/a&gt; чтобы открыть конечный ISO файл в Проводнике</ClickToOpenISOInExplorer>
@@ -126,6 +134,7 @@
         <ClickToOpenOutFolder>Нажмите &lt;a href="_open_local_file"&gt;здесь&lt;/a&gt; чтобы открыть конечную папку</ClickToOpenOutFolder>
         <DiskToISO>
             <OpeningDevice>Открытие устройства, пожалуйста, подождите...</OpeningDevice>
+            <CheckingDisc>Проверка диска, пожалуйста, подождите...</CheckingDisc>
             <TotalDataSize>Полный размер данных - %1</TotalDataSize>
             <CreatingISO>Создание ISO...</CreatingISO>
             <CannotCreateFromAudio>Вы не можете создавать ISO образ мульти-сессионного или аудио диска..</CannotCreateFromAudio>
@@ -147,7 +156,13 @@
             <WritingTrack>Запись дорожки %1, длина дорожки - %2 секторов</WritingTrack>
             <DiskReadingStopped>Чтение остановлено на секторе %1</DiskReadingStopped>
             <TrackReadingStopped>Чтение остановлено на секторе %1, продолжаю следущую дорожку</TrackReadingStopped>
+            <ImageIncomplete>Образ создан, но %1 секторов (%2) не удалось прочитать, они заполнены нулями. Нечитаемые секторы: %3</ImageIncomplete>
+            <WriteFailed>Не удалось записать в выходной файл: %1</WriteFailed>
+            <DiskSizeAdjusted>Размер диска: заявлено %1 секторов, будет прочитано %2 (%3)</DiskSizeAdjusted>
         </DiskToISO>
+        <BinCue>
+            <MultipleFilesNotSupported>В этом CUE-листе указано больше одного файла данных, это не поддерживается.</MultipleFilesNotSupported>
+        </BinCue>
         <FolderToISO>
             <ScanningFolder>Сканирую исходную директорию...</ScanningFolder>
             <DirectorySize>Суммарный размер данных - %1</DirectorySize>
@@ -308,5 +323,19 @@
             <buttonYes>Да</buttonYes>
             <buttonNo>Нет</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Разблокировать Pro версию</title>
+            <infoText>Введите email адрес, который Вы указали при покупке %1, и лицензионный ключ из письма о покупке, чтобы разблокировать все функции Pro версии.</infoText>
+            <licenseVerifyInfo>Введенная информация может быть проверена через Интернет.</licenseVerifyInfo>
+            <email>Email адрес</email>
+            <licenseKey>Лицензионный ключ</licenseKey>
+            <buttonUnlock>Разблокировать</buttonUnlock>
+            <buttonRestoreLicense>Восстановить лицензию</buttonRestoreLicense>
+            <invalidLicenseTitle>Неверная лицензия!</invalidLicenseTitle>
+            <invalidLicenseText>Убедитесь, что все введенные буквы, цифры и тире в верном порядке. Если Вы вводите ключ вручную, попробуйте вместо этого скопировать его из регистрационного email и вставить.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Этот лицензионный ключ верный, но он не предназначен для использования в среде %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Спасибо за покупку %1 Pro</thanksTitle>
+            <thanksInfo>Все ограничения бесплатной версии убраны. Мы надеемся, что Вам понравится пользоваться программой!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

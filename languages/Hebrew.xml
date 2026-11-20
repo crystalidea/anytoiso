@@ -70,12 +70,6 @@
         <LiteVersionLimitText>.לאחר הקנייה &lt;/a&gt;פתיחת התוכנה&gt;&lt;a href="פתח"קוד הרישום ישלח .&lt;/a&gt; לקנות גרסא מקצועית&gt;&lt;a href="קנייה"לשם עבודה עם קבצים גדולים (די וי די או יותר) עלייך .(up to 870 MB) &lt;/b&gt;דמויות סי די בלבד&lt;b&gt;עובדת עם AnyToISO גרסא קלה של</LiteVersionLimitText>
         <buttonPurchasePro>...קנה גרסא מקצועית</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>הכנס קוד רישום</Caption>
-        <EnterKeyToUpgradeText>.AnyToISO הכנס את פרטי הרישום בבקשה לשם ביצוע השידרוג לגרסא המקצועית של</EnterKeyToUpgradeText>
-        <RegName>:שם רישום</RegName>
-        <RegCode>:קוד רישום</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>AnyToISO אודות</Caption>
         <Website>:אתר אינטרנט</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>?האם ברצונך להמשיך\n\n .נראה שאין מספיק מקום חופשי (רק %1) בדיסק הנבחר</NotEnoughDiskSpace>
         <ISOAlreadyExists>?כבר קיים, האם ברצונך לשכתבו ISO -יעד קובץ ה\n%1\n</ISOAlreadyExists>
         <FolderAlreadyExists>?תיקיית יעד בשם זה קיימת כבר, האם ברצונך לשכתב את כל הקבצים הזהים\n%1\n</FolderAlreadyExists>
-        <RestartProgram>?האם ברצונך לעשות זאת כעת\n\n .להשלמת הרישום הנך נדרש לאתחל את התוכנה</RestartProgram>
         <CancelOperation>?האם אתה בטוח שברצונך להפסיק את הפעולה הנוכחית</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>כן</buttonYes>
             <buttonNo>לא</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>‫ביטול נעילת גרסת Pro‬</title>
+            <infoText>הזן את כתובת הדוא״ל שבה השתמשת לרכישת %1 ואת מפתח הרישיון מהקבלה כדי לבטל את הנעילה של כל תכונות ה-Pro.</infoText>
+            <licenseVerifyInfo>ייתכן שהמידע שתזין יאומת דרך האינטרנט.</licenseVerifyInfo>
+            <email>כתובת דוא״ל</email>
+            <licenseKey>מפתח רישיון</licenseKey>
+            <buttonUnlock>בטל נעילה</buttonUnlock>
+            <buttonRestoreLicense>שחזר רישיון</buttonRestoreLicense>
+            <invalidLicenseTitle>רישיון לא תקף!</invalidLicenseTitle>
+            <invalidLicenseText>ודא שכל האותיות, הספרות והמקפים הוזנו בסדר הנכון. אם אתה מקליד את התווים ידנית, נסה במקום זאת להעתיק ולהדביק אותם מהקבלה שקיבלת בדוא״ל.</invalidLicenseText>
+            <invalidLicenseMismatchOS>מפתח הרישיון הזה תקף, אך אינו מיועד לשימוש במערכת %1.</invalidLicenseMismatchOS>
+            <thanksTitle>תודה שרכשת את %1 Pro</thanksTitle>
+            <thanksInfo>כל המגבלות של הגרסה החינמית הוסרו. אנו מקווים שתיהנה מהשימוש בתוכנה!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

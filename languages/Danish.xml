@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Lite versionen af AnyToISO tilbyder kun at brugen af &lt;b&gt;CD filer&lt;/b&gt; (op til 870 MB). Hvis du ønsker at benytte større filer (såsom DVD og større) er du nødt til at &lt;a href="purchase"&gt;købe den Professionelle version&lt;/a&gt;. Du vil så modtage en registreringskode &lt;a href="unlock"&gt;der vil åbne programmet til den fulde version&lt;/a&gt; efter købet.</LiteVersionLimitText>
         <buttonPurchasePro>Køb Pro Version...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Indtast Registreringsinfo</Caption>
-        <EnterKeyToUpgradeText>Indtast venligt registreringsdetaljerne for at opgradere til Pro versionen af AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Navn på registrator:</RegName>
-        <RegCode>Registreringskode:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Om AnyToISO</Caption>
         <Website>Hjemmeside:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Det ser ud til der ikke er nok plads (kun %1) på den valgte disk. \n\nØnsker du at fortsætte?</NotEnoughDiskSpace>
         <ISOAlreadyExists>ISO filen der skrives til\n%1\neksistere allerede, vil du overskrive den?</ISOAlreadyExists>
         <FolderAlreadyExists>Destinationsmappen\n%1\neksistere allerede, vil du overskrive alle filer med samme navn?</FolderAlreadyExists>
-        <RestartProgram>For at afslutte registrering må du genstarte programmet. \n\nØnsker du at gøre det nu?</RestartProgram>
         <CancelOperation>Ønsker du at afslutte igangværende aktivitet?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Lås Pro-versionen op</title>
+            <infoText>Indtast den e-mailadresse, du brugte ved købet af %1, og licensnøglen fra din kvittering for at låse alle Pro-funktioner op.</infoText>
+            <licenseVerifyInfo>De oplysninger, du indtaster, kan blive kontrolleret via internettet.</licenseVerifyInfo>
+            <email>E-mailadresse</email>
+            <licenseKey>Licensnøgle</licenseKey>
+            <buttonUnlock>Lås op</buttonUnlock>
+            <buttonRestoreLicense>Gendan licens</buttonRestoreLicense>
+            <invalidLicenseTitle>Ugyldig licens!</invalidLicenseTitle>
+            <invalidLicenseText>Kontrollér, at alle bogstaver, tal og bindestreger er indtastet i den rigtige rækkefølge. Hvis du skriver tegnene manuelt, så prøv i stedet at kopiere dem fra kvitteringen i din e-mail og indsætte dem.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Denne licensnøgle er gyldig, men er ikke beregnet til brug på %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Tak, fordi du købte %1 Pro</thanksTitle>
+            <thanksInfo>Alle begrænsninger i gratisversionen er fjernet. Vi håber, du får glæde af appen!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

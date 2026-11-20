@@ -70,12 +70,6 @@
         <LiteVersionLimitText>De Lite versie van AnyToISO werkt alleen met &lt;b&gt;CD images &lt;/b&gt; (tot max. 870 MB). Om met grotere bestanden (DVD en groter) te werken moet u &lt;a href="kopen"&gt;hier&lt;/a&gt; de Pro versie kopen. U ontvangt de registratiecode om &lt;a href="unlock"&gt;hier&lt;/a&gt; de software vrij te geven na uw aankoop.</LiteVersionLimitText>
         <buttonPurchasePro>Koop de Pro Versie...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Voer Registratiecode in</Caption>
-        <EnterKeyToUpgradeText>Voer uw registratiecode in om naar de Pro versie van AnyToISO te upgraden.</EnterKeyToUpgradeText>
-        <RegName>Registratienaam:</RegName>
-        <RegCode>Registratiecode:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Over AnyToISO</Caption>
         <Website>Website:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Het lijkt erop dat er niet genoeg vrije ruimte (maar %1) op de geselecteerde disk beschikbaar is. \n\nWilt u doorgaan?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Doel ISO image\n%1\nbestaat reeds, wilt u het bestand overschrijven?</ISOAlreadyExists>
         <FolderAlreadyExists>Doel map\n%1\nbestaat reeds, wilt u de bestaande bestanden met dezelfde naam overschrijven?</FolderAlreadyExists>
-        <RestartProgram>Om de registratie te voltooien moet u het programma opnieuw opstarten. \n\nWilt u nu het programma opnieuw opstarten?</RestartProgram>
         <CancelOperation>Weet u zeker dat u de huidige handeling wilt onderbreken?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Ja</buttonYes>
             <buttonNo>Nee</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Ontgrendel Pro-versie</title>
+            <infoText>Voer het e-mailadres waarmee u %1 heeft aangeschaft en de licentiesleutel uit uw aankoopbevestiging in om alle Pro-functies te ontgrendelen.</infoText>
+            <licenseVerifyInfo>De informatie die u invoert, kan worden geverifieerd via internet.</licenseVerifyInfo>
+            <email>E-mailadres</email>
+            <licenseKey>Licentiesleutel</licenseKey>
+            <buttonUnlock>Ontgrendel</buttonUnlock>
+            <buttonRestoreLicense>Herstel licentie</buttonRestoreLicense>
+            <invalidLicenseTitle>Ongeldige licentie</invalidLicenseTitle>
+            <invalidLicenseText>Zorg ervoor dat alle letters, cijfers en streepjes in de juiste volgorde zijn ingevoerd. Als u het nummer met de hand typt, probeert u het dan te kopiëren en plakken vanuit de e-mailbevestiging.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Deze licentiesleutel is geldig, maar niet bedoeld voor gebruik op %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Bedankt voor uw aankoop van %1 Pro</thanksTitle>
+            <thanksInfo>Alle beperkingen van de gratis versie zijn verwijderd. Veel plezier met het programma!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

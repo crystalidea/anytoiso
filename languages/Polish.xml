@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Wersja Lite AnyToISO pracuje tylko z &lt;b&gt;obrazem CD&lt;/b&gt; (do 870 MB). Aby pracować z większymi plikami (DVD i większe) należy &lt;a href="purchase"&gt;Kupić wersję profesjonalną&lt;/a&gt;. Po zakupie otrzymasz kod rejestracyjny do &lt;a href="unlock"&gt;odblokowania programu&lt;/a&gt;.</LiteVersionLimitText>
         <buttonPurchasePro>Kup wersję Pro...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Wpisz klucz rejestracyjny</Caption>
-        <EnterKeyToUpgradeText>Wpisz swoje dane rejestracyjne, by przejść do wersji Pro AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Nazwa rejestracyjna:</RegName>
-        <RegCode>Kod rejestracyjny:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>O programie AnyToISO</Caption>
         <Website>Strona programu:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Wygląda na to, że na wybranej płycie jest za mało wolnego miejsca (tylko %1). \n\nCzy chcesz kontynuować?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Docelowy plik ISO\n%1\njuż istnieje, czy chcesz go zastąpić?</ISOAlreadyExists>
         <FolderAlreadyExists>Docelowy folder\n%1\njuż istnieje, czy chcesz zamienić wszystkie istniejące pliki o tej samej nazwie?</FolderAlreadyExists>
-        <RestartProgram>Do zakończenia rejestracji wymagane jest ponowne uruchomienie programu. \n\nZrobić to teraz?</RestartProgram>
         <CancelOperation>Na pewno chcesz przerwać bieżącą operację?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -121,9 +114,9 @@
         <CannotOpenDestFile>Nie można otworzyć pliku docelowego.</CannotOpenDestFile>
         <OperationTerminated>Operacja przerwana przez użytkownika.</OperationTerminated>
         <OperationCompleted>Operacja zakończona.</OperationCompleted>
-        <ClickToOpenISOInExplorer>Kliknij &lt;a href="_otwórz_lokalny_plik"&gt;tu&lt;/a&gt; by otworzyć w Explorerze folder wyjściowy pliku ISO</ClickToOpenISOInExplorer>
-        <ClickToMountISOInFinder>Kliknij &lt;a href="_otwórz_lokalny_plik"&gt;tu&lt;/a&gt; by zamontować plik ISO w Wyszukiwarce</ClickToMountISOInFinder>
-        <ClickToOpenOutFolder>Kliknij &lt;a href="_otwórz_lokalny_plik"&gt;tu&lt;/a&gt; by otworzyć folder wyjściowy w Explorerze</ClickToOpenOutFolder>
+        <ClickToOpenISOInExplorer>Kliknij &lt;a href="_open_local_file"&gt;tu&lt;/a&gt; by otworzyć w Explorerze folder wyjściowy pliku ISO</ClickToOpenISOInExplorer>
+        <ClickToMountISOInFinder>Kliknij &lt;a href="_open_local_file"&gt;tu&lt;/a&gt; by zamontować plik ISO w Wyszukiwarce</ClickToMountISOInFinder>
+        <ClickToOpenOutFolder>Kliknij &lt;a href="_open_local_file"&gt;tu&lt;/a&gt; by otworzyć folder wyjściowy w Explorerze</ClickToOpenOutFolder>
         <DiskToISO>
             <OpeningDevice>Otwieranie urządzenia, proszę czekać...</OpeningDevice>
             <TotalDataSize>Łączna wielkość danych - %1</TotalDataSize>
@@ -308,5 +301,19 @@
             <buttonYes>Tak</buttonYes>
             <buttonNo>Nie</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Odblokowywanie wersji Pro</title>
+            <infoText>Wpisz adres email użyty przy zakupie programu %1 oraz klucz licencyjny z otrzymanego potwierdzenia, aby odblokować wszystkie funkcje wersji Pro.</infoText>
+            <licenseVerifyInfo>Informacja, którą wpisałeś, może być zweryfikowana poprzez Internet.</licenseVerifyInfo>
+            <email>Adres email</email>
+            <licenseKey>Klucz licencyjny</licenseKey>
+            <buttonUnlock>Odblokuj</buttonUnlock>
+            <buttonRestoreLicense>Przywróć licencję</buttonRestoreLicense>
+            <invalidLicenseTitle>Licencja nieważna!</invalidLicenseTitle>
+            <invalidLicenseText>Upewnij się, że wszystkie litery, cyfry i kreski wprowadzone są w poprawnej kolejności. Jeśli wpisywałeś je ręcznie, to spróbuj tym razem skopiować je i wkleić z maila potwierdzającego zakup.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Klucz jest poprawny, ale nie przeznaczony do użycia na %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Dziękujemy za zakup %1 Pro</thanksTitle>
+            <thanksInfo>Wszystkie ograniczenia wersji darmowej zostały zniesione. Mamy nadzieję, że podoba Ci się nasza aplikacja!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

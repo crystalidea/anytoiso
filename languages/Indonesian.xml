@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Versi Lite dari AnyToISO hanya bekerja pada &lt;b&gt;image CD saja&lt;/b&gt; (sampai dengan 870 MB). Untuk dapat bekerja pada berkas lebih besar (DVD dan lainya) anda harus &lt;a href="purchase"&gt;membeli versi profesional&lt;/a&gt;. Setelah proses pembelian, anda akan menerima kode pendaftaran &lt;a href="unlock"&gt;untuk membuka software&lt;/a&gt;.</LiteVersionLimitText>
         <buttonPurchasePro>Beli versi Pro...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Masukan kode pendaftaran</Caption>
-        <EnterKeyToUpgradeText>Silahkan masukan detail pendaftaran anda untuk meningkatkan AnyToISO ke versi Pro.</EnterKeyToUpgradeText>
-        <RegName>Nama pendaftaran:</RegName>
-        <RegCode>Kode pendaftaran:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Tentang AnyToISO</Caption>
         <Website>Situs:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Sepertinya tidak ada cukup ruang bebas pada disk (hanya %1) pada pilihan drive. \n\nAnda ingin memprosesnya?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Tujuan berkas ISO\n%1\nsudah ada sebelumnya, apakah anda ingin menumpuknya?</ISOAlreadyExists>
         <FolderAlreadyExists>Tujan folder\n%1\nsudah ada sebelumnya, apakah anda ingin menumpuk semua berkas yang yang memilik nama sama?</FolderAlreadyExists>
-        <RestartProgram>Untuk menyelesaikan pendaftaran anda harus merestart program. \n\nApakah anda ingin melakukanya?</RestartProgram>
         <CancelOperation>Apakah anda yakin ingin membatalkan operasi yang sekarang?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Buka versi Pro</title>
+            <infoText>Masukkan alamat email yang Anda gunakan saat membeli %1 beserta kode lisensi dari tanda terima pembelian untuk membuka semua fitur Pro.</infoText>
+            <licenseVerifyInfo>Informasi yang anda masukan akan diverifikasi melalui Internet.</licenseVerifyInfo>
+            <email>Alamat email</email>
+            <licenseKey>Kode lisensi</licenseKey>
+            <buttonUnlock>Buka kunci</buttonUnlock>
+            <buttonRestoreLicense>Kembalikan Lisensi</buttonRestoreLicense>
+            <invalidLicenseTitle>Lisensi tidak valid!</invalidLicenseTitle>
+            <invalidLicenseText>Pastikan semua huruf, angka, dan strip dimasukan dalam urutan yang benar. Jika anda mengetik angka menggunakan tangan, Silahkan coba untuk salin dan tempel dari tanda terima yang di kirim melalui email.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Kode lisensi ini valid akan tetapi kode lisensi ini tidak dimaksudkan untuk digunakan pada %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Terima Kasih sudah membeli %1 Pro</thanksTitle>
+            <thanksInfo>Semua batasan versi Gratis telah dihapus, kami harap Anda menikmati menggunakan aplikasi ini!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

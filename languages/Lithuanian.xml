@@ -70,12 +70,6 @@
         <LiteVersionLimitText>AnyToIso Lite versija dirba su &lt;b&gt;Tik su CD atvaizdais&lt;/b&gt; (iki 870 MB). Norint dirbti su didesniais failais (DVD ir daugiau) jūs turėtumėte &lt;a href="purchase"&gt;Nusipirkti profesionalią versiją&lt;/a&gt;. Jūs gausite registracijos kodą &lt;a href="unlock"&gt;kuris atrakins programinę įrangą&lt;/a&gt; po pirkimo.</LiteVersionLimitText>
         <buttonPurchasePro>Buy Pro Version...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Įveskite registracijos kodą</Caption>
-        <EnterKeyToUpgradeText>Prašome įvesti jūsų registracijos detales norint naujinti į AnyToISO Pro versiją.</EnterKeyToUpgradeText>
-        <RegName>Registracijos vardas:</RegName>
-        <RegCode>Registracijos kodas:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Apie AnyToISO</Caption>
         <Website>Interneto svetainė:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Rodos, kad nepakanka tuščios vietos (tik %1) pasirinktame diske. \n\nAr vis tiek norite tęsti?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Toks paskirties ISO failas\n%1\njau yra, ar norite jį perrašyti?</ISOAlreadyExists>
         <FolderAlreadyExists>Toks paskirties aplankas\n%1\njau yra, ar norite perrašyti visus esančius failus su tuo pačiu vardu??</FolderAlreadyExists>
-        <RestartProgram>Norint užbaigti registraciją jūs privalote iš naujo paleisti programą. \n\nAr norite tai padaryti dabar?</RestartProgram>
         <CancelOperation>Ar jūs tikrai norite nutraukti dabartinę operaciją?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Atrakinti Pro versiją</title>
+            <infoText>Įveskite el. pašto adresą, kurį naudojote pirkdami programą %1, ir licencijos raktą iš pirkimo kvito, kad atrakintumėte visas Pro funkcijas.</infoText>
+            <licenseVerifyInfo>Įvesta informacija gali būti patikrinta internetu.</licenseVerifyInfo>
+            <email>El. pašto adresas</email>
+            <licenseKey>Licencijos raktas</licenseKey>
+            <buttonUnlock>Atrakinti</buttonUnlock>
+            <buttonRestoreLicense>Atkurti licenciją</buttonRestoreLicense>
+            <invalidLicenseTitle>Netinkama licencija!</invalidLicenseTitle>
+            <invalidLicenseText>Įsitikinkite, kad visos raidės, skaitmenys ir brūkšneliai įvesti teisinga tvarka. Jei simbolius renkate ranka, pabandykite juos nukopijuoti ir įklijuoti iš el. laiške gauto kvito.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Šis licencijos raktas galioja, tačiau nėra skirtas naudoti operacinėje sistemoje %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Dėkojame, kad įsigijote %1 Pro</thanksTitle>
+            <thanksInfo>Visi nemokamos versijos apribojimai panaikinti. Tikimės, kad jums patiks naudotis programa!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

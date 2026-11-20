@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Lite версия AnyToISO работи само с &lt;b&gt;CD образи&lt;/b&gt; (до 870 MБ). За работа с големи файлове (DVD и по големи) вие трябва да &lt;a href="purchase "&gt; Купите Професионалната версия&lt;/a&gt;. След покупката вие получавате регистрационен код за &lt;a href="unlock"&gt; отключване на програмата&lt;/a&gt;.</LiteVersionLimitText>
         <buttonPurchasePro>Купи Pro версия…</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Въведи регистрациония ключ</Caption>
-        <EnterKeyToUpgradeText>Въведете регистрационите данни за ъпгрейд до Pro версия на програмата.</EnterKeyToUpgradeText>
-        <RegName>Регистрационо Име:</RegName>
-        <RegCode>Регистрационен Код:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>За програмата AnyToISO</Caption>
         <Website>Сайт:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>На избрания диск няма достатъчно свободно място (налично %1). \n\nИскате ли да продължите?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Крайния ISO файл\n%1\nвече съществува, искате ли да го презапишете?</ISOAlreadyExists>
         <FolderAlreadyExists>Крайната папка\n%1\nвече съществува, искате ли да презапишете всички съществуващи файлове с еднакви имена?</FolderAlreadyExists>
-        <RestartProgram>За завършване на операцията вие трябва да рестартирате програмата. \n\nИскате ли да го направите сега?</RestartProgram>
         <CancelOperation>Вие действително ли искате да прекъснете текущата операция?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Да</buttonYes>
             <buttonNo>Не</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Отключи на Pro версията</title>
+            <infoText>Въведете имейл адреса, с който сте закупили %1, и продуктовия ключ от бележката за покупката, за да отключите всички Pro функции.</infoText>
+            <licenseVerifyInfo>Информацията, която въвеждате може да бъде потвърдена по интернет.</licenseVerifyInfo>
+            <email>Имейл адрес</email>
+            <licenseKey>Продуктов ключ</licenseKey>
+            <buttonUnlock>Отключи</buttonUnlock>
+            <buttonRestoreLicense>Възстанови лиценз</buttonRestoreLicense>
+            <invalidLicenseTitle>Невалиден лиценз!</invalidLicenseTitle>
+            <invalidLicenseText>Уверете се, че всички букви, цифри и тирета са въведени в правилния ред. Ако пишете ключа на ръка, опитайте да го копирате и поставите от имейл бележката.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Този продуктов ключ е валиден, но не е предназначен за използване в %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Благодарим Ви за закупуването на %1 Pro</thanksTitle>
+            <thanksInfo>Всички лимити на безплатната версия са премахнати, надяваме се, да ви хареса!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

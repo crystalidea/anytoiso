@@ -70,12 +70,6 @@
         <LiteVersionLimitText>AnyToISO-ს მსუბუქი ვერსია მუშაობს მხოლოდ &lt;b&gt;CD ფაილებთან&lt;/b&gt; (870 მბ-მდე). დიდ ფაილებთან სამუშაოდ (DVD და მეტი) საჭიროა &lt;a href="purchase"&gt;პროფესიონალური ვერსიის ყიდვა&lt;/a&gt;. კოდს მიიღებთ პროგრამის ყიდვის შემდეგ &lt;a href="unlock"&gt;პროგრამის რეგისტრაციისთვის&lt;/a&gt;.</LiteVersionLimitText>
         <buttonPurchasePro>პრო ვერსიის ყიდვა...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>შეიყვანეთ კოდი</Caption>
-        <EnterKeyToUpgradeText>AnyToISO-ს პრო ვერსიაზე განსაახლებლად შეიყვანეთ სარეგისტრაციო მონაცემები.</EnterKeyToUpgradeText>
-        <RegName>სახელი:</RegName>
-        <RegCode>კოდი:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>AnyToISO-ს შესახებ</Caption>
         <Website>ვებ-გვერდი:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>არჩეულ დისკზე არ არის საკმარისი სივრცე (მხოლოდ %1)\n\nგსურთ, დამუშავება?</NotEnoughDiskSpace>
         <ISOAlreadyExists>ISO ფაილი\n%1\nუკვე არსებობს, გსურთ მისი ჩანაცვლება?</ISOAlreadyExists>
         <FolderAlreadyExists>საქაღალდე\n%1\nუკვე არსებობს, გსურთ ყველა ფაილის იგივე სახელით ჩანაცვლება?</FolderAlreadyExists>
-        <RestartProgram>რეგისტრაციის დასრულებისთვის საჭიროა პროგრამის გადატვირთვა. \n\nგსურთ გადატვირთვა?</RestartProgram>
         <CancelOperation>ნამდვილად გსურთ, ოპერაციის გაუქმება?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Pro ვერსიის განბლოკვა</title>
+            <infoText>Pro ვერსიის ყველა ფუნქციის განსაბლოკად შეიყვანეთ email მისამართი, რომლითაც შეიძინეთ %1, და ლიცენზიის კოდი ყიდვის დამადასტურებელი წერილიდან.</infoText>
+            <licenseVerifyInfo>შეყვანილი ინფორმაცია შეიძლება გადამოწმდეს ინტერნეტის დახმარებით.</licenseVerifyInfo>
+            <email>Email მისამართი</email>
+            <licenseKey>ლიცენზიის კოდი</licenseKey>
+            <buttonUnlock>განბლოკვა</buttonUnlock>
+            <buttonRestoreLicense>ლიცენზიის აღდგენა</buttonRestoreLicense>
+            <invalidLicenseTitle>არასწორი ლიცენზია!</invalidLicenseTitle>
+            <invalidLicenseText>დარწმუნდით, რომ შეყვანილი ყველა ასო, რიცხვი და ტირე სწორ თანმიმდევრობაშია. თუ ლიცენზიის კოდი თქვენით შეგყავთ, სცადეთ დამადასტურებელი email-იდან დააკოპიროთ და ჩასვათ.</invalidLicenseText>
+            <invalidLicenseMismatchOS>ლიცენზიის ეს კოდი სწორია, მაგრამ არ განკუთვნილია %1 გარემოში გამოსაყენებლად.</invalidLicenseMismatchOS>
+            <thanksTitle>გმადლობთ %1 Pro-ს ყიდვისთვის</thanksTitle>
+            <thanksInfo>უფასო ვერსიის ყველა შეზღუდვა გაუქმებულია. იმედი გვაქვს, რომ პროგრამის გამოყენება მოგეწონებათ!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

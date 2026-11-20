@@ -70,12 +70,6 @@
         <LiteVersionLimitText>AnyToISO Lite versiyası yalnızca &lt;b&gt;CD görüntüləriylə&lt;/b&gt; (870 MB'a qədər) çalışır. Daha böyük ölçülü fayllarla çalışmaq üçün (DVD və çoxu) &lt;a href="purchase"&gt;Professional versiyanı satın almalısınız&lt;/a&gt;. Satın almadan sonra &lt;a href="unlock"&gt;proqramın kilidini açmaq üçün&lt;/a&gt; lazım olan qeydiyyat kodunu alacağsınız.</LiteVersionLimitText>
         <buttonPurchasePro>Pro Versiyanı Satın Al...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Qeydiyyat Kodunu Gir</Caption>
-        <EnterKeyToUpgradeText>AnyToISO Pro Versiyasına yüksəltmək üçün zəhmət omasa qeydiyyat detallarınızı girin.</EnterKeyToUpgradeText>
-        <RegName>Qeyd Adı:</RegName>
-        <RegCode>Qeyd Kodu:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>AnyToISO Haqqında</Caption>
         <Website>Web saytı:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Seçilən diskdə kafi boş sahə yoxdu (sadəcə%1). \n\nDavam etmək istəyirsinizmi?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Hədəf ISO faylı\n%1\nonsuzda mövcuddur, üzərinə yazmaq istəyirsinizmi?</ISOAlreadyExists>
         <FolderAlreadyExists>Hedef klasör\n%1\nonsuzda mövcuddur, eyni addakı faylların üzərinə yazmaq istəyirsinizmi?</FolderAlreadyExists>
-        <RestartProgram>Qeydiyyat əməliyyatını tamamlamaq üçün proqramı yenidən başlatmalısınız. \n\nBunu indi etmək ister istəyirsinizmi?</RestartProgram>
         <CancelOperation>Mövcud əməliyyatı ləğv etmək istədiyinizdən əminsinizmi?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Pro versiyanın kilidini açın</title>
+            <infoText>Bütün Pro funksiyalarının kilidini açmaq üçün %1 proqramını satın alarkən istifadə etdiyiniz e-poçt ünvanını və qəbzinizdəki lisenziya açarını daxil edin.</infoText>
+            <licenseVerifyInfo>Daxil etdiyiniz məlumatlar İnternet vasitəsilə yoxlanıla bilər.</licenseVerifyInfo>
+            <email>E-poçt ünvanı</email>
+            <licenseKey>Lisenziya açarı</licenseKey>
+            <buttonUnlock>Kilidi aç</buttonUnlock>
+            <buttonRestoreLicense>Lisenziyanı bərpa et</buttonRestoreLicense>
+            <invalidLicenseTitle>Etibarsız lisenziya!</invalidLicenseTitle>
+            <invalidLicenseText>Bütün hərflərin, rəqəmlərin və defislərin düzgün ardıcıllıqla daxil edildiyinə əmin olun. Simvolları əl ilə yazırsınızsa, bunun əvəzinə onları e-poçtla göndərilən qəbzdən kopyalayıb yapışdırmağa çalışın.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Bu lisenziya açarı etibarlıdır, lakin %1 əməliyyat sistemində istifadə üçün nəzərdə tutulmayıb.</invalidLicenseMismatchOS>
+            <thanksTitle>%1 Pro versiyasını satın aldığınız üçün təşəkkür edirik</thanksTitle>
+            <thanksInfo>Pulsuz versiyanın bütün məhdudiyyətləri aradan qaldırıldı. Ümid edirik ki, proqramdan istifadə etmək xoşunuza gələcək!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

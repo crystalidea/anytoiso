@@ -70,12 +70,6 @@
         <LiteVersionLimitText>نسخه کوچک برنامه فقط با &lt;b&gt; ایمیج سی دی &lt;/b&gt; تا حجم 870 مگابایت کار میکند. به منظور کار با فایل های بزرگتر مثل دی وی دی شما باید &lt;a href="purchase"&gt;نسخه حرفه ای را خریداری کنید&lt;/a&gt;. شما کد ثبت نام برای &lt;a href="unlock"&gt;رفع محدودیت ها&lt;/a&gt; را بعد از خرید برنامه دریافت میکنید</LiteVersionLimitText>
         <buttonPurchasePro>خرید نسخه حرفه ای..</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>کدثبت نام را وارد کنید</Caption>
-        <EnterKeyToUpgradeText>لطفا جزئیات ثبت نام را برای ارتقاء به نسخه حرفه ای وارد کنید</EnterKeyToUpgradeText>
-        <RegName>نام ثبت نام:</RegName>
-        <RegCode>کد ثبت نام:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>درباره برنامه</Caption>
         <Website>وبسایت:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>بنظر میرسد فضای دیسک کافی (فقط %1) در درایو انتخاب شده موجود نیست \n\nآیا ادامه میدهید؟</NotEnoughDiskSpace>
         <ISOAlreadyExists>فایل ایزو مقصد\n%1\nاز قبل موجود است،آن را جایگزین میکنید؟</ISOAlreadyExists>
         <FolderAlreadyExists>پوشه مقصد\n%1\nاز قبل موجود است،آیا میخواهید همه فایل های موجود با همان نام جایگزین شود؟</FolderAlreadyExists>
-        <RestartProgram>برای کامل شدن ثبت نام برنامه باید ریستارت شود \n\nآیا میخواهید آن را انجام دهید؟</RestartProgram>
         <CancelOperation>آیا میخواهید عملکرد فعلی لغو شود؟</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>بله</buttonYes>
             <buttonNo>خیر</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>باز کردن قفل نسخه Pro</title>
+            <infoText>برای باز کردن قفل همه ویژگی‌های Pro، آدرس ایمیلی را که هنگام خرید %1 استفاده کرده‌اید و کلید لایسنس موجود در رسید را وارد کنید.</infoText>
+            <licenseVerifyInfo>اطلاعاتی که وارد می‌کنید ممکن است از طریق اینترنت بررسی شود.</licenseVerifyInfo>
+            <email>آدرس ایمیل</email>
+            <licenseKey>کلید لایسنس</licenseKey>
+            <buttonUnlock>باز کردن قفل</buttonUnlock>
+            <buttonRestoreLicense>بازیابی لایسنس</buttonRestoreLicense>
+            <invalidLicenseTitle>لایسنس نامعتبر است!</invalidLicenseTitle>
+            <invalidLicenseText>مطمئن شوید که همه حروف، ارقام و خط‌تیره‌ها به ترتیب درست وارد شده‌اند. اگر نویسه‌ها را دستی تایپ می‌کنید، بهتر است آن‌ها را از ایمیل رسید خرید کپی کنید و بچسبانید.</invalidLicenseText>
+            <invalidLicenseMismatchOS>این کلید لایسنس معتبر است، اما برای استفاده در %1 در نظر گرفته نشده است.</invalidLicenseMismatchOS>
+            <thanksTitle>از خرید %1 Pro سپاسگزاریم</thanksTitle>
+            <thanksInfo>همه محدودیت‌های نسخه رایگان برداشته شده‌اند. امیدواریم از کار با این برنامه لذت ببرید!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

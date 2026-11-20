@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Lite veze AnyToISO pracuje jen s obrazy &lt;b&gt;CD&lt;/b&gt; (do 870 MB). Chcete-li pracovat s větším (DVD a více) musíte &lt;a href="zakoupit"&gt;Koupit verzi Pro&lt;/a&gt;. Registrační kód obdržíte &lt;a href="odemknout"&gt;odemknout software&lt;/a&gt; po zakoupení.</LiteVersionLimitText>
         <buttonPurchasePro>Koupit verzi Pro...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Vložte registraci</Caption>
-        <EnterKeyToUpgradeText>Vložte detaily registrace, a získáte AnyToISO Pro.</EnterKeyToUpgradeText>
-        <RegName>Jméno:</RegName>
-        <RegCode>Kód:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Popis AnyToISO</Caption>
         <Website>web:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Vypadá to na nedostatek volného místa, na vybrané jednotce je(pouze %1). \n\nChcete pokračovat?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Cílový soubor ISO \n%1\njiž existuje, chcete ho přepsat?</ISOAlreadyExists>
         <FolderAlreadyExists>Cílová složka\n%1\njiž existuje, chcete soubory se stejným názvem přepsat?</FolderAlreadyExists>
-        <RestartProgram>Pro dokončení registrace musíte program restartovat. \n\nChcete to nyní udělat?</RestartProgram>
         <CancelOperation>Jste si jisti, že chcete ukončit probíhající operaci?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Ano</buttonYes>
             <buttonNo>Ne</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Aktivovat verzi Pro</title>
+            <infoText>Zadejte email, který jste použili při nákupu aplikace %1, a licenční klíč z účtenky, abyste odemkli všechny funkce verze Pro.</infoText>
+            <licenseVerifyInfo>Zadané informace budou ověřeny přes internet.</licenseVerifyInfo>
+            <email>Email</email>
+            <licenseKey>Licenční klíč</licenseKey>
+            <buttonUnlock>Aktivovat</buttonUnlock>
+            <buttonRestoreLicense>Obnovit licenci</buttonRestoreLicense>
+            <invalidLicenseTitle>Neplatná licence!</invalidLicenseTitle>
+            <invalidLicenseText>Zkontrolujte správnost zadaných údajů, velikost písmen, číslice, správné pořadí , pomlčky. Pokud jste údaje zadávali ručně, zkuste zadat údaje pomocí Kopírovat-Vložit přímo z emailu.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Tento klíč je platný, ale neodpovídá verzi %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Děkujeme za zakoupení %1 Pro</thanksTitle>
+            <thanksInfo>Všechna omezení Free verze budou odstraněna, užijte si naši aplikaci!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

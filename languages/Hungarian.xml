@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Az AnyToISO lite verziója csak &lt;b&gt;CD képfájlokkal működik&lt;/b&gt; (870 MB). A nagyobb fájlok használatához (DVD vagy nagyobb) a &lt;a href="purchase"&gt;Professional verzió megvásárlása&lt;/a&gt; szükséges. A regisztrációs kódot a &lt;a href="unlock"&gt;szoftver feloldásához&lt;/a&gt; a vásárlás után kapja kézhez.</LiteVersionLimitText>
         <buttonPurchasePro>Pro verzió megvásárlása</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Regisztrációs kód megadása</Caption>
-        <EnterKeyToUpgradeText>Kérjük, adja meg a regisztrációs adatokat az AnyToISO Pro verzióra frissítéshez.</EnterKeyToUpgradeText>
-        <RegName>Regisztrációs név:</RegName>
-        <RegCode>Regisztrációs kód:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Az AnyToISO névjegye</Caption>
         <Website>Weboldal:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Nincs elegendő szabad lemezterület (csak %1) a kiválasztott meghajtón. \n\nFolytatja a műveletet?</NotEnoughDiskSpace>
         <ISOAlreadyExists>A(z)\n%1\ncélfájl már létezik. Felülírja?</ISOAlreadyExists>
         <FolderAlreadyExists>A(z)\n%1\ncélmappa már létezik. Felülírja az összes létező fájlt ugyanazzal a névvel?</FolderAlreadyExists>
-        <RestartProgram>A regisztráció befejezéséhez, újra kell indítania a programot. \n\nÚjraindítja most?</RestartProgram>
         <CancelOperation>Valóban megszakítja az aktuális folyamatot?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Igen</buttonYes>
             <buttonNo>Nem</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Pro verzió feloldása</title>
+            <infoText>Írd be az email címet, amellyel megvásároltad a(z) %1 alkalmazást, és a visszaigazolásban található licenszkulcsot, hogy feloldd az összes Pro funkciót.</infoText>
+            <licenseVerifyInfo>Az általad megadott információkat az interneten keresztül ellenőrizhetjük.</licenseVerifyInfo>
+            <email>Email cím</email>
+            <licenseKey>Licenszkulcs</licenseKey>
+            <buttonUnlock>Feloldás</buttonUnlock>
+            <buttonRestoreLicense>Licensz visszaállítása</buttonRestoreLicense>
+            <invalidLicenseTitle>Érvénytelen licensz!</invalidLicenseTitle>
+            <invalidLicenseText>Győződj meg róla, hogy az összes betű, szám és kötőjel helyes sorrendben van beírva. Ha kézzel írod be, próbáld meg másolni és beilleszteni az email visszaigazolásból.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Ez a licenszkulcs érvényes, de nem használható ezen a %1 rendszeren.</invalidLicenseMismatchOS>
+            <thanksTitle>Köszönjük, hogy megvásároltad a(z) %1 Pro-t</thanksTitle>
+            <thanksInfo>Minden korlátozást eltávolítottunk a Free verzióból, reméljük élvezed az alkalmazást!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

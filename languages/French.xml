@@ -70,12 +70,6 @@
         <LiteVersionLimitText>La version Lite d'AnyToISO ne fonctionne qu'avec les &lt;b&gt;images CD&lt;/b&gt; (jusqu'à 870 MB). Afin de travailler avec des fichiers plus volumineux (DVD et plus) vous devez &lt;a href="purchase"&gt;Acheter la version Professionelle&lt;/a&gt;. Vous obtiendrez le code d'enregistrement &lt;a href="unlock"&gt;débloquant le logiciel&lt;/a&gt; après achat.</LiteVersionLimitText>
         <buttonPurchasePro>Acheter la version Pro...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Entrer la clé d'enregistrement</Caption>
-        <EnterKeyToUpgradeText>Merci d'entrer votre clé d'enregistrement pour effectuer la mise à jour vers la version Pro d'AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Nom d'enregistrement:</RegName>
-        <RegCode>Code d'enregistrement:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>À propos d'AnyToISO</Caption>
         <Website>Site web:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Il semblerait qu'il n'y a pas assez d'espace libre (seulement %1) sur le disque sélectionné. \n\nVoulez-vous continuer ?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Le fichier ISO de destination\n%1\nexiste déjà, voulez-vous l'écraser ?</ISOAlreadyExists>
         <FolderAlreadyExists>Le dossier destination\n%1\nexiste déjà, voulez-vous écraser tous les fichiers existants ayant le même nom ?</FolderAlreadyExists>
-        <RestartProgram>Pour terminer votre enregistrement vous devez relancer le programme. \n\nVoulez-vous le faire maintenant ?</RestartProgram>
         <CancelOperation>Êtes-vous sûr de vouloir mettre fin à l'opération en cours ?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Oui</buttonYes>
             <buttonNo>Non</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Déverrouiller la version Pro</title>
+            <infoText>Entrez l’adresse e-mail utilisée pour acheter %1 ainsi que la clé de licence figurant sur votre reçu afin de déverrouiller toutes les fonctionnalités Pro.</infoText>
+            <licenseVerifyInfo>Les informations que vous avez entrées peuvent être vérifiées sur Internet.</licenseVerifyInfo>
+            <email>Adresse e-mail</email>
+            <licenseKey>Clé de licence</licenseKey>
+            <buttonUnlock>Déverrouiller</buttonUnlock>
+            <buttonRestoreLicense>Restaurer la licence</buttonRestoreLicense>
+            <invalidLicenseTitle>Licence invalide !</invalidLicenseTitle>
+            <invalidLicenseText>Assurez-vous que toutes les lettres, chiffres et tirets sont entrés dans le bon ordre. Si vous tapez le numéro à la main, essayez plutôt de le copier-coller depuis le reçu de votre courriel.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Cette clé de licence est valide mais n'est pas destinée à être utilisée sur %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Merci d’avoir acheté %1 Pro</thanksTitle>
+            <thanksInfo>Toutes les limitations de la version gratuite ont été supprimées, nous espérons que vous apprécierez l'utilisation de l'application !</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

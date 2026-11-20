@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Phiên bản Lite của AnyToISO chỉ làm việc với &lt;b&gt;các ảnh CD&lt;/b&gt; (lên tới 870 MB). Để làm việc với các tập tin lớn hơn (DVD hoặc hơn) bạn nên &lt;a href="purchase"&gt;Mua phiên bản Professional&lt;/a&gt;. Bạn sẽ nhận mã đăng kí &lt;a href="unlock"&gt;mở khóa phần mềm&lt;/a&gt; sau khi mua.</LiteVersionLimitText>
         <buttonPurchasePro>Mua phiên bản Pro...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Nhập Mã Đăng Kí</Caption>
-        <EnterKeyToUpgradeText>Hãy nhập chi tiết đăng kí của bạn để nâng cấp lên phiên bản Pro của AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Tên Đăng Kí:</RegName>
-        <RegCode>Mã Đăng Kí:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Thông tin AnyToISO</Caption>
         <Website>Website:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Dường như không đủ không gian đĩa trống (chỉ %1) trên ổ đĩa được chọn. \n\nBạn có muốn tiến hành không?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Tập tin ISO đích\n%1\nđã tồn tại, bạn có muốn ghi đè nó không?</ISOAlreadyExists>
         <FolderAlreadyExists>Thư mục đích\n%1\nđã tồn tại, bạn có muốn ghi đè tất cả tập tin đã có với tên giống như vậy không?</FolderAlreadyExists>
-        <RestartProgram>Để hoàn thành đăng kí bạn phải khởi động lại chương trình. \n\nBạn có muốn thực hiện nó bây giờ không?</RestartProgram>
         <CancelOperation>Bạn có chắc muốn chấm dứt hoạt động hiện hành không?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Có</buttonYes>
             <buttonNo>Không</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Mở khoá phiên bản Pro</title>
+            <infoText>Hãy nhập địa chỉ email bạn đã dùng khi mua %1 và mã giấy phép trong hoá đơn để mở khoá toàn bộ chức năng Pro.</infoText>
+            <licenseVerifyInfo>Thông tin bạn nhập có thể được xác nhận qua Internet.</licenseVerifyInfo>
+            <email>Địa chỉ Email</email>
+            <licenseKey>Mã giấy phép</licenseKey>
+            <buttonUnlock>Mở khoá</buttonUnlock>
+            <buttonRestoreLicense>Phục hồi Giấy phép</buttonRestoreLicense>
+            <invalidLicenseTitle>Giấy phép không hợp lệ!</invalidLicenseTitle>
+            <invalidLicenseText>Chắc chắn rằng tất cả chữ, số và dấu gạch ngang đã nhập theo đúng thứ tự. Nếu bạn đang cố nhập số bằng tay, hãy thử sao chép và dán nó từ trong hoá đơn email của bạn.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Giấy phép này hợp lệ nhưng không phù hợp để dùng trên %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Cảm ơn bạn đã mua %1 Pro</thanksTitle>
+            <thanksInfo>Tất cả giới hạn của Phiên bản miễn phí đã được gỡ bỏ, chúng tôi mong bạn sẽ thích sử dụng ứng dụng này!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

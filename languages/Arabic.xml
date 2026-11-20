@@ -70,12 +70,6 @@
         <LiteVersionLimitText>بعد الشراء&lt;/a&gt;&lt;a href="unlock"&gt; انت ستحصل على رمز التسجيل&lt;/a&gt;تشتري اصدار المحترف &lt;a href="purchase"&gt; (بحدود 870 ميغابايت). لكي يعمل بالملفات الاكبر (ديفيدي واكثر) انت يجب ان&lt;/b&gt;صورة قرص مدمج فقط &lt;b&gt; مع AnyToISO تعمل النسخة المخففة ل</LiteVersionLimitText>
         <buttonPurchasePro>شراء نسخة محترف...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>ادخل رمز التسجيل</Caption>
-        <EnterKeyToUpgradeText>رجاء ادخل تفاصيل تسجيلك للترقية الى نسخة اي ايزو محترف</EnterKeyToUpgradeText>
-        <RegName>اسم التسجيل:</RegName>
-        <RegCode>رمز التسجيل:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>AnyToISO حول</Caption>
         <Website>موقع الويب:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>هل ترغب في المضي قدما \n\n يبدو لا توجد مساحة كافية %1ى القرص (فقط 1%) على محرك الاقراص المحدد</NotEnoughDiskSpace>
         <ISOAlreadyExists>موجود بالفعل، هل ترغب في الكتابة فوقه \n%1\n وجهة ملف ايزو</ISOAlreadyExists>
         <FolderAlreadyExists>يوجد بالفعل، هل ترغب في الكتابة فوق كافة الملفات الموجودة بنفس الاسم\n%1\n المجلد الوجهة؟</FolderAlreadyExists>
-        <RestartProgram>هل ترغب في القيام بذلك الان \n\n لاكمال التسجيل يجب عليك اعادة تشغيل البرنامج؟</RestartProgram>
         <CancelOperation>هل انت متاكد تريد انهاء العملية الحالية؟</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>نعم</buttonYes>
             <buttonNo>لا</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>فتح نسخة برو</title>
+            <infoText>لإلغاء قفل جميع ميزات Pro، أدخل عنوان البريد الإلكتروني الذي استخدمته عند شراء %1، ومفتاح الترخيص الموجود في إيصال الشراء.</infoText>
+            <licenseVerifyInfo>المعلومات التي تدخلها عبر الإنترنت ربما يتم التحقق منها عبر الانترنت.</licenseVerifyInfo>
+            <email>البريد الالكتروني</email>
+            <licenseKey>مفتاح الترخيص</licenseKey>
+            <buttonUnlock>فتح</buttonUnlock>
+            <buttonRestoreLicense>استعادة الرخصة</buttonRestoreLicense>
+            <invalidLicenseTitle>رخصة خاطئة!</invalidLicenseTitle>
+            <invalidLicenseText>تأكد من إدخال جميع الحروف والأرقام والشرطات بالترتيب الصحيح. إذا كنت تكتب الرقم باليد ، فحاول نسخها ولصقها من إيصال البريد الإلكتروني بدلاً من ذلك.</invalidLicenseText>
+            <invalidLicenseMismatchOS>مفتاح الترخيص هذا صالح ولكنه غير مخصص للاستخدام على %1.</invalidLicenseMismatchOS>
+            <thanksTitle>شكراً لشرائك %1 Pro</thanksTitle>
+            <thanksInfo>تمت إزالة جميع القيود المفروضة على الإصدار المجاني ، نأمل أن تستمتع باستخدام التطبيق!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

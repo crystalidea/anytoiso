@@ -70,12 +70,6 @@
         <LiteVersionLimitText>AnyToISO の Lite バージョンは &lt;b&gt;CD イメージのみ&lt;/b&gt; (870 MB まで) で動作します。それ以上の大きいファイル (DVD など) で動作させるには &lt;a href="purchase"&gt;Professional バージョンを購入&lt;/a&gt;する必要があります。購入後は&lt;a href="unlock"&gt;ソフトウェアをロック解除する&lt;/a&gt;登録コードを取得します。</LiteVersionLimitText>
         <buttonPurchasePro>Pro バージョンの購入...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>登録コードの入力</Caption>
-        <EnterKeyToUpgradeText>AnyToISO の Pro バージョンへアップグレードするには登録の詳細を入力してください。</EnterKeyToUpgradeText>
-        <RegName>登録名:</RegName>
-        <RegCode>登録コード:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>AnyToISO のバージョン情報</Caption>
         <Website>Web サイト:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>選択されたドライブには十分な空きディスク領域がないようにみえます (残り %1)。\n\n続行しますか?</NotEnoughDiskSpace>
         <ISOAlreadyExists>ISO ファイル\n%1\nは既に存在します、上書きしますか?</ISOAlreadyExists>
         <FolderAlreadyExists>フォルダー\n%1\nは既に存在します、すべての同じ名前の既存のファイルを上書きしますか?</FolderAlreadyExists>
-        <RestartProgram>登録を完了するにはプログラムを再起動する必要があります。 \n\n今すぐ再起動しますか?</RestartProgram>
         <CancelOperation>現在の操作を終了してもよろしいですか?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>はい</buttonYes>
             <buttonNo>いいえ</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Pro バージョンを解除</title>
+            <infoText>すべての Pro 機能のロックを解除するには、%1 の購入時に使用したメールアドレスと、レシートに記載されているライセンス・キーを入力してください。</infoText>
+            <licenseVerifyInfo>入力された情報は、インターネット上で確認されます。</licenseVerifyInfo>
+            <email>メールアドレス</email>
+            <licenseKey>ライセンス・キー</licenseKey>
+            <buttonUnlock>解除</buttonUnlock>
+            <buttonRestoreLicense>ライセンスの復元</buttonRestoreLicense>
+            <invalidLicenseTitle>ライセンスが無効です。</invalidLicenseTitle>
+            <invalidLicenseText>すべての文字、数字、ダッシュが正しい順序で入力されていることを確認してください。手で番号を入力している場合は、代わりにメールのレシートからコピー＆ペーストしてください。</invalidLicenseText>
+            <invalidLicenseMismatchOS>このライセンス・キーは有効ですが、%1 で使用することはできません。</invalidLicenseMismatchOS>
+            <thanksTitle>この度は %1 Pro をご購入いただきありがとうございます。</thanksTitle>
+            <thanksInfo>無料版での制限はすべて解除されていますので、ぜひご利用ください。</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Lite версія AnyToISO працює тільки з &lt;b&gt;CD образами&lt;/b&gt; (до 870 MБ). Щоб працювати з великими файлами (DVD і більше) вам потрібно &lt;a href="purchase"&gt;Придбати Професійну версію&lt;/a&gt;. Після чого Ви отримаєте реєстраційний код для &lt;a href="unlock"&gt;розблокування програми&lt;/a&gt;.</LiteVersionLimitText>
         <buttonPurchasePro>Придбати Pro версію...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Введення реєстраційного ключа</Caption>
-        <EnterKeyToUpgradeText>Введіть реєстраційні дані для поновлення до Pro версії програми.</EnterKeyToUpgradeText>
-        <RegName>Реєстраційне Ім'я:</RegName>
-        <RegCode>Реєстраційний Код:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Про програму AnyToISO</Caption>
         <Website>Сайт:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Схоже, що на вибраному диску не достатньо вільного місця (всього %1). \n\nВи все рівно бажаєте продовжити?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Кінцевий ISO файл\n%1\nвже існує, Ви бажаєте перезаписати його?</ISOAlreadyExists>
         <FolderAlreadyExists>Кінцева тека\n%1\nвже існує, Ви бажаєте перезаписати усі існуючі файли з одинаковими іменами?</FolderAlreadyExists>
-        <RestartProgram>Для завершення реєстрації Ви повинні перезавантажити програму. \n\nБажаєте зробити це зараз?</RestartProgram>
         <CancelOperation>Ви дійсно бажаєте зупинити поточну дію?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Так</buttonYes>
             <buttonNo>Ні</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Розблокувати Pro версію</title>
+            <infoText>Введіть адресу email, яку Ви вказали під час купівлі %1, і ліцензійний ключ із листа про покупку, щоб розблокувати всі функції Pro версії.</infoText>
+            <licenseVerifyInfo>Введену інформацію можуть перевірити через Інтернет.</licenseVerifyInfo>
+            <email>Email адрес</email>
+            <licenseKey>Ліцензійний ключ</licenseKey>
+            <buttonUnlock>Розблокувати</buttonUnlock>
+            <buttonRestoreLicense>Відновити ліцензію</buttonRestoreLicense>
+            <invalidLicenseTitle>Невірна ліцензія!</invalidLicenseTitle>
+            <invalidLicenseText>Переконайтеся, що всі букви, цифри і тире введено в правильній послідовності. Замість того, щоб вводити ключ вручну, попробуйте скопіювати його з реєстраційного email і вставити.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Цей ліцензійний ключ є дійсним, але не призначений для використання на %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Дякуємо за покупку %1 Pro</thanksTitle>
+            <thanksInfo>Всі обмеження безкоштовної версії знято. Ми сподіваємося, що Вам сподобається користуватися застосунком!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

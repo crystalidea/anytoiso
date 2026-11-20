@@ -70,12 +70,6 @@
         <LiteVersionLimitText>La versión Lite de AnyToISO funciona &lt;b&gt;sólo con imagenes de CD&lt;/b&gt; (870 MB como mucho). Para trabajar con imagenes mayores (DVD y más) debes &lt;a href="comprar"&gt;Comprar la versión profesional&lt;/a&gt;. Obtendrás el código de registro para &lt;a href="desbloquear"&gt;que desbloquea el producto&lt;/a&gt; después de la compra.</LiteVersionLimitText>
         <buttonPurchasePro>Comprar la versión Pro...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Introduce la clave de registro</Caption>
-        <EnterKeyToUpgradeText>Por favor, introduce tu clave de registro para actualizar a la versión Pro de AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Nombre de registro:</RegName>
-        <RegCode>Código de registro:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Acerca de AnyToISO</Caption>
         <Website>Sitio web:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Parece que no hay espacio libre suficiente en el disco (sólo %1) en la unidad seleccionada. \n\n¿Quieres continuar?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Le fichero ISO de destino \n%1\nya existe, ¿Quieres reemplazarlo??</ISOAlreadyExists>
         <FolderAlreadyExists>La carpeta de destino\n%1\nya existe, ¿Quieres reemplazar todos los ficheros existentes con el mismo nombre?</FolderAlreadyExists>
-        <RestartProgram>Para completar el registro reinicia el programa. \n\n¿Quieres hacerlo ahora?</RestartProgram>
         <CancelOperation>¿Estás seguro de que quieres terminar la operación en curso?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -259,17 +252,17 @@
             <ReleasedOn>Lanzada en %1</ReleasedOn>
             <CheckForUpdates>Buscar actualizaciones…</CheckForUpdates>
             <NewVersionAvailable>Una nueva versión de %1 está disponible</NewVersionAvailable>
-            <NewVersionAvailableText>%1 %2 está disponible - tienes %3. ¿Quieres descargarlo ahora?</NewVersionAvailableText>
+            <NewVersionAvailableText>%1 %2 está disponible - tienes %3. ¿Desea descargarlo ahora?</NewVersionAvailableText>
             <UpdateAlertTitle>Actualización de Software</UpdateAlertTitle>
             <UpdateAlertReleaseNotes>Notas de la versión:</UpdateAlertReleaseNotes>
-            <UpdateAlertRemindLater>Recordar Luego</UpdateAlertRemindLater>
+            <UpdateAlertRemindLater>Recordar luego</UpdateAlertRemindLater>
             <UpdateAlertSkip>Omitir esta versión</UpdateAlertSkip>
-            <UpdateAlertInstall>Instalar Actualización</UpdateAlertInstall>
+            <UpdateAlertInstall>Instalar actualización</UpdateAlertInstall>
             <UpdateAlertAutomaticUpdates>Buscar actualizaciónes automaticamente</UpdateAlertAutomaticUpdates>
             <MessageNoUpdateAvailable>Su versión está actualizada</MessageNoUpdateAvailable>
             <MessageNoUpdateAvailableDescription>%1 %2 es la última versión disponible.</MessageNoUpdateAvailableDescription>
-            <MessageErrorConnect>Error descargando actualización. Por favor, prueba más tarde.</MessageErrorConnect>
-            <MessageErrorParse>Ocurrió un error actualizando el feed de actualizaciones.</MessageErrorParse>
+            <MessageErrorConnect>Error al descargar la actualización. Por favor, inténtelo más tarde.</MessageErrorConnect>
+            <MessageErrorParse>Ocurrió un error actualizando el historial de actualizaciones.</MessageErrorParse>
             <UpdateProgressTitle>Actualizando %1</UpdateProgressTitle>
             <UpdateProgressCancel>Cancelar</UpdateProgressCancel>
             <UpdateProgressInstallAndRelaunch>Instalar y Reiniciar</UpdateProgressInstallAndRelaunch>
@@ -284,29 +277,43 @@
         </UpdateChecker>
         <LetsMoveMac>
             <kStrMoveApplicationCouldNotMove>No se ha podido trasladar a la carpeta Aplicaciones</kStrMoveApplicationCouldNotMove>
-            <kStrMoveApplicationQuestionTitle>¿Deseas trasladar la aplicación a la carpeta Aplicaciones?</kStrMoveApplicationQuestionTitle>
-            <kStrMoveApplicationQuestionTitleHome>¿Deseas trasladar la aplicación a la carpeta Aplicaciones?</kStrMoveApplicationQuestionTitleHome>
-            <kStrMoveApplicationQuestionMessage>Esta aplicación (%1) puede trasladarse automáticamente a la carpeta Aplicaciones.</kStrMoveApplicationQuestionMessage>
+            <kStrMoveApplicationQuestionTitle>¿Desea trasladar la aplicación a la carpeta Aplicaciones?</kStrMoveApplicationQuestionTitle>
+            <kStrMoveApplicationQuestionTitleHome>¿Desea trasladar la aplicación a la carpeta Aplicaciones?</kStrMoveApplicationQuestionTitleHome>
+            <kStrMoveApplicationQuestionMessage>¿Desea que %1 se mueva automáticamente a la carpeta Aplicaciones?</kStrMoveApplicationQuestionMessage>
             <kStrMoveApplicationButtonMove>Trasladar a la carpeta Aplicaciones</kStrMoveApplicationButtonMove>
             <kStrMoveApplicationButtonDoNotMove>No trasladar</kStrMoveApplicationButtonDoNotMove>
             <kStrMoveApplicationQuestionInfoWillRequirePasswd>Se requiere contraseña de administrador.</kStrMoveApplicationQuestionInfoWillRequirePasswd>
-            <kStrMoveApplicationQuestionInfoInDownloadsFolder>De este modo podrás ordenar mejor la carpeta Descargas.</kStrMoveApplicationQuestionInfoInDownloadsFolder>
+            <kStrMoveApplicationQuestionInfoInDownloadsFolder>De este modo, podrá ordenar mejor la carpeta Descargas.</kStrMoveApplicationQuestionInfoInDownloadsFolder>
         </LetsMoveMac>
         <QLineEditEx>
             <actionUndo>Deshacer</actionUndo>
             <actionRedo>Rehacer</actionRedo>
-            <actionCut>Copiar</actionCut>
+            <actionCut>Cortar</actionCut>
             <actionCopy>Copiar</actionCopy>
             <actionPaste>Pegar</actionPaste>
             <actionDelete>Eliminar</actionDelete>
             <actionSelectAll>Seleccionar todo</actionSelectAll>
         </QLineEditEx>
         <QMessageBoxEx>
-            <buttonOK>OK</buttonOK>
+            <buttonOK>Aceptar</buttonOK>
             <buttonCancel>Cancelar</buttonCancel>
             <buttonClose>Cerrar</buttonClose>
-            <buttonYes>Si</buttonYes>
+            <buttonYes>Sí</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Desbloquear versión Pro</title>
+            <infoText>Introduzca el correo electrónico con el que compró %1 y la clave de licencia de su recibo para desbloquear todas las funciones Pro.</infoText>
+            <licenseVerifyInfo>La información que introduzca puede ser verificada por Internet.</licenseVerifyInfo>
+            <email>Dirección de correo electrónico</email>
+            <licenseKey>Clave de licencia</licenseKey>
+            <buttonUnlock>Desbloquear</buttonUnlock>
+            <buttonRestoreLicense>Restablecer licencia</buttonRestoreLicense>
+            <invalidLicenseTitle>¡Licencia inválida!</invalidLicenseTitle>
+            <invalidLicenseText>Asegúrese de ingresar todas las letras, números y guiones en el orden correcto. Si está escribiendo la clave a mano, intente copiarla y pegarla desde su recibo del correo electrónico.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Esta clave de licencia es válida pero no está destinada a ser utilizada en %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Gracias por comprar %1 Pro</thanksTitle>
+            <thanksInfo>Se han eliminado todas las limitaciones de la versión gratuita. ¡Esperamos que disfrute usando la aplicación!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

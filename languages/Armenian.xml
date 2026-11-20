@@ -70,12 +70,6 @@
         <LiteVersionLimitText>AnyToISO-ի Lite տարբերակը աշխատում է միայն &lt;b&gt;CD արտացոլանքների հետ&lt;/b&gt; (մինչև 870 ՄԲ)։ Ավելի մեծ ֆայլերի հետ աշխատելու համար (DVD և այլն) Դուք պետք է &lt;a href="purchase"&gt;Գնեք Pro տարբերակը&lt;/a&gt;։ Գնելուց հետո Դուք կստանաք գրանցման բանալի՝ &lt;a href="unlock"&gt;ծրագրի բոլոր հնարավորությունները ակտիվացնելու համար&lt;/a&gt;։</LiteVersionLimitText>
         <buttonPurchasePro>Գնել Pro տարբերակը...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Մուտքագրել բանալին</Caption>
-        <EnterKeyToUpgradeText>Մուտքագրեք տվյալները՝ ծրագրի Pro տարբերակը ակտիվացնելու համար։</EnterKeyToUpgradeText>
-        <RegName>Գրանցվողի անունը.</RegName>
-        <RegCode>Գրանցման բանալին.</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>AnyToISO ծրագրի մասին</Caption>
         <Website>Կայքը.</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Հնարավոր է ընտրված սկավառակում չկա ազատ տեղ (ընդամենը %1)։ \n\nՇարունակե՞լ։</NotEnoughDiskSpace>
         <ISOAlreadyExists>Այս անունով ISO ֆայլ\n%1\nարդեն գոյություն ունի, վերագրե՞լ այն։</ISOAlreadyExists>
         <FolderAlreadyExists>Այս թղթապանակը\n%1\nարդեն գոյություն ունի, վերագրե՞լ առկա նույն անունով բոլոր ֆայլերը։</FolderAlreadyExists>
-        <RestartProgram>Գրանցումը ավարտելու համար վերամեկնարկեք ծրագիրը։\n\nՎերամեկնարկե՞լ։</RestartProgram>
         <CancelOperation>Ընդհատե՞լ գործողությունը։</CancelOperation>
     </Messages>
     <StatusMessages>

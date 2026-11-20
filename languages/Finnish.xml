@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Esittelyversio AnyToISO ohjelmasta toimii vain&lt;b&gt;CD levykuvien kanssay&lt;/b&gt; (korkeintaan 870 Mt). Jos haluat käsitellä suurempia tiedostoja (DVD tai muut) sinun on &lt;a href="purchase"&gt;hankittava AnytoISOsta täysversio &lt;/a&gt;. Saat rekisteröintikoodin &lt;a href="unlock"&gt;jolla saat avattua ohjelmat laajat toiminnallisuudet&lt;/a&gt; kun olet hankkinut täysversion.</LiteVersionLimitText>
         <buttonPurchasePro>Osta Täysversio...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Anna rekisteröintikoodi</Caption>
-        <EnterKeyToUpgradeText>Ole hyvä ja anna rekisteröintiin tarvittavat tiedot päivittääksesi AnyToISO täysversioon.</EnterKeyToUpgradeText>
-        <RegName>Rekisteröijän nimi:</RegName>
-        <RegCode>Rekisteröintikoodi:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Tietoja AnyToISO ohjelmasta</Caption>
         <Website>Verkkosivu:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Vaikuttaa siltä ettei kohdelevyllä ole riittävästi tilaa (vain %1). \n\nHaluatko jatkaa?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Kohde ISO tiedosto\n%1\non jo olemassa, haluatko ylikirjoittaa tiedoston?</ISOAlreadyExists>
         <FolderAlreadyExists>Kohdehakemisto \n%1\non jo olemassa, haluatko ylikirjoittaa saman nimiset tiedostot?</FolderAlreadyExists>
-        <RestartProgram>Viimeistelläksesi rekisteröintisi on tämä ohjelma käynnistettävä uudelleen. \n\nHaluatko käynnistää ohjelman uudelleen nyt?</RestartProgram>
         <CancelOperation>Oletko varma että haluat keskeyttää toiminnon?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Kyllä</buttonYes>
             <buttonNo>Ei</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Avaa Pro-version lukitus</title>
+            <infoText>Syötä sähköpostiosoite, jota käytit ostaessasi sovelluksen %1, sekä kuitissa oleva lisenssiavain, niin saat kaikki Pro-ominaisuudet käyttöön.</infoText>
+            <licenseVerifyInfo>Syöttämäsi tiedot voidaan tarkistaa internetin kautta.</licenseVerifyInfo>
+            <email>Sähköpostiosoite</email>
+            <licenseKey>Lisenssiavain</licenseKey>
+            <buttonUnlock>Avaa lukitus</buttonUnlock>
+            <buttonRestoreLicense>Palauta lisenssi</buttonRestoreLicense>
+            <invalidLicenseTitle>Virheellinen lisenssi!</invalidLicenseTitle>
+            <invalidLicenseText>Varmista, että kaikki kirjaimet, numerot ja väliviivat on syötetty oikeassa järjestyksessä. Jos kirjoitat merkit käsin, kokeile sen sijaan kopioida ja liittää ne sähköpostikuitista.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Tämä lisenssiavain on kelvollinen, mutta sitä ei ole tarkoitettu käytettäväksi käyttöjärjestelmässä %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Kiitos, että ostit %1 Pro -version</thanksTitle>
+            <thanksInfo>Kaikki ilmaisversion rajoitukset on poistettu. Toivottavasti nautit sovelluksen käytöstä!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

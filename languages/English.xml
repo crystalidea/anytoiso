@@ -40,6 +40,7 @@
             <buttonRefresh>Refresh</buttonRefresh>
             <buttonBrowseISO>Browse...</buttonBrowseISO>
             <NoDiskInserted>No CD/DVD disk inserted</NoDiskInserted>
+            <LoadingDrives>Loading available optical drives...</LoadingDrives>
             <buttonMakeISO>Make ISO</buttonMakeISO>
             <buttonMakeBinCue>Create BIN/CUE image</buttonMakeBinCue>
             <chooseISOOrBinCueImage>Please select ISO or BIN/CUE image file</chooseISOOrBinCueImage>
@@ -70,12 +71,15 @@
         <LiteVersionLimitText>Lite version of AnyToISO works with &lt;b&gt;CD images only&lt;/b&gt; (up to 870 MB). In order to work with larger files (DVD and more) you should &lt;a href="purchase"&gt;Purchase Professional version&lt;/a&gt;. You'll obtain the registration code &lt;a href="unlock"&gt;unlocking the software&lt;/a&gt; after the purchase.</LiteVersionLimitText>
         <buttonPurchasePro>Buy Pro Version...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Enter Registration Code</Caption>
-        <EnterKeyToUpgradeText>Please enter your registration details to upgrade to Pro version of AnyToISO.</EnterKeyToUpgradeText>
-        <RegName>Registration Name:</RegName>
-        <RegCode>Registration Code:</RegCode>
-    </EnterKeyDialog>
+    <LicenseKey>
+        <NotPortable>This license key is for the installed version of AnyToISO. The portable version needs a portable license.</NotPortable>
+        <PortableTitle>AnyToISO will restart as a portable copy</PortableTitle>
+        <PortableText>This is a portable license. AnyToISO will keep its settings and the license in anytoiso_portable.ini next to the program instead of the registry.</PortableText>
+        <Version3KeyTitle>This license key is for AnyToISO 3.x</Version3KeyTitle>
+        <Version3FoundTitle>Your AnyToISO 3 license</Version3FoundTitle>
+        <Version3UpgradeText>AnyToISO 4 uses a new type of license key, so keys of version 3 do not unlock it.\n\nAs an owner of an AnyToISO 3 license, you can upgrade to AnyToISO 4 with a 50% discount.</Version3UpgradeText>
+        <Version3UpgradeButton>Buy with 50% Discount</Version3UpgradeButton>
+    </LicenseKey>
     <AboutDialog>
         <Caption>About AnyToISO</Caption>
         <Website>Website:</Website>
@@ -104,7 +108,7 @@
         <NotEnoughDiskSpace>It looks like there's not enough free disk space (only %1) on the selected drive. \n\nDo you wish to proceed?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Destination ISO file\n%1\nalready exists, do you wish to overwrite it?</ISOAlreadyExists>
         <FolderAlreadyExists>Destination folder\n%1\nalready exists, do you wish to overwrite all existing files with the same name?</FolderAlreadyExists>
-        <RestartProgram>To complete registration you must restart the program. \n\nDo you wish to do it now?</RestartProgram>
+        <FilesAlreadyExist>These destination files already exist:\n%1\nDo you wish to overwrite them?</FilesAlreadyExist>
         <CancelOperation>Are you sure you want to terminate current operation?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -119,6 +123,10 @@
         <ISOImageTypeFound>ISO image (type %1) found</ISOImageTypeFound>
         <CannotOpenSourceFile>Unable to open source file</CannotOpenSourceFile>
         <CannotOpenDestFile>Unable to open destination file, please check the file name and access rights</CannotOpenDestFile>
+        <DestinationNotSpecified>The destination path is not specified</DestinationNotSpecified>
+        <DestinationIsFolder>The destination %1 is a folder, please specify the image file name</DestinationIsFolder>
+        <DestinationIsFile>The destination %1 is a file, please specify a folder</DestinationIsFile>
+        <OutputIsSource>The output file must not be the source image or one of its files</OutputIsSource>
         <OperationTerminated>Operation terminated by user.</OperationTerminated>
         <OperationCompleted>Operation completed.</OperationCompleted>
         <ClickToOpenISOInExplorer>Click &lt;a href="_open_local_file"&gt;here&lt;/a&gt; to open the output ISO file in Explorer</ClickToOpenISOInExplorer>
@@ -126,6 +134,7 @@
         <ClickToOpenOutFolder>Click &lt;a href="_open_local_file"&gt;here&lt;/a&gt; to open the output folder</ClickToOpenOutFolder>
         <DiskToISO>
             <OpeningDevice>Opening media device, please wait...</OpeningDevice>
+            <CheckingDisc>Checking the disc, please wait...</CheckingDisc>
             <TotalDataSize>Total data size is %1</TotalDataSize>
             <CreatingISO>Creating ISO...</CreatingISO>
             <CannotCreateFromAudio>You cannot create ISO image of a multi-session disk or an Audio Disk, please contact support for assistance.</CannotCreateFromAudio>
@@ -147,7 +156,13 @@
             <WritingTrack>Writing track %1, track length is %2 sectors</WritingTrack>
             <DiskReadingStopped>Reading stopped at %1</DiskReadingStopped>
             <TrackReadingStopped>Reading stopped at %1, resuming with next track</TrackReadingStopped>
+            <ImageIncomplete>The image was created, but %1 sectors (%2) could not be read and were filled with zeros. Unreadable sectors: %3</ImageIncomplete>
+            <WriteFailed>Unable to write to the output file: %1</WriteFailed>
+            <DiskSizeAdjusted>Disc size: %1 sectors reported, %2 sectors will be read (%3)</DiskSizeAdjusted>
         </DiskToISO>
+        <BinCue>
+            <MultipleFilesNotSupported>This CUE sheet references more than one data file, which is not supported.</MultipleFilesNotSupported>
+        </BinCue>
         <FolderToISO>
             <ScanningFolder>Scanning source directory...</ScanningFolder>
             <DirectorySize>Directory size is %1</DirectorySize>
@@ -308,5 +323,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Unlock Pro version</title>
+            <infoText>Enter the email address you used to purchase %1 and the license key from your receipt to unlock all Pro features.</infoText>
+            <licenseVerifyInfo>The information you enter may be verified over the Internet.</licenseVerifyInfo>
+            <email>Email Address</email>
+            <licenseKey>License Key</licenseKey>
+            <buttonUnlock>Unlock</buttonUnlock>
+            <buttonRestoreLicense>Restore License</buttonRestoreLicense>
+            <invalidLicenseTitle>Invalid license!</invalidLicenseTitle>
+            <invalidLicenseText>Make sure all letters, numbers, and dashes are entered in the correct order. If you are typing the characters by hand, try copying and pasting it from your email receipt instead.</invalidLicenseText>
+            <invalidLicenseMismatchOS>This license key is valid but not intended to be used on %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Thank you for purchasing %1 Pro</thanksTitle>
+            <thanksInfo>All of the limitations of the Free version have been removed, we hope you enjoy using the app!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

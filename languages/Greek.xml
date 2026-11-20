@@ -70,12 +70,6 @@
         <LiteVersionLimitText>Η Lite έκδοση AnyToISO λειτουργεί &lt;b&gt;μόνο με είδωλα CD&lt;/b&gt; (έως 870 MB). Για να μπορεί να λειτουργεί με μεγαλύτερα μεγέθη (DVD και άλλα) θα πρέπει να &lt;a href="purchase"&gt;αγοράσετε την Έκδοση Professional&lt;/a&gt;. Μετά την αγορά θα λάβετε τον κωδικό καταχώρησης &lt;a href="unlock"&gt;που ξεκλειδώνει το πρόγραμμα&lt;/a&gt;.</LiteVersionLimitText>
         <buttonPurchasePro>Αγορά έκδοσης Pro...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>Εισαγωγή κλειδιού καταχώρησης</Caption>
-        <EnterKeyToUpgradeText>Παρακαλώ εισάγετε το κλειδί καταχώρησης για αναβάθμιση στην έκδοση AnyToISO Pro.</EnterKeyToUpgradeText>
-        <RegName>Όνομα καταχώρησης:</RegName>
-        <RegCode>Κωδικός καταχώρησης:</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>Πληροφορίες για το AnyToISO</Caption>
         <Website>Ιστοσελίδα:</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>Φαίνεται ότι δεν υπάρχει αρκετός ελεύθερος χώρος στον επιλεγμένο δίσκο (μόνο %1). \n\nΘέλετε να προχωρήσω?</NotEnoughDiskSpace>
         <ISOAlreadyExists>Το αρχείο ISO\n%1\nυπάρχει ήδη στη θέση προορισμού, θέλετε να το αντικαταστήσω?</ISOAlreadyExists>
         <FolderAlreadyExists>Ο φάκελος προορισμού\n%1\nυπάρχει ήδη, θέλετε να αντικαταστήσω όλα τα υπάρχοντα αρχεία?</FolderAlreadyExists>
-        <RestartProgram>Για να ολοκληρωθεί η καταχώρηση πρέπει να επανεκκινήσετε το πρόγραμμα. \n\nΘέλετε να το κάνω τώρα?</RestartProgram>
         <CancelOperation>Είστε σίγουροι ότι θέλετε να τερματιστεί η τρέχουσα εργασία?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>Yes</buttonYes>
             <buttonNo>No</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>Ξεκλείδωμα έκδοσης Pro</title>
+            <infoText>Εισαγάγετε τη διεύθυνση email που χρησιμοποιήσατε για την αγορά της εφαρμογής %1 και το κλειδί άδειας χρήσης από την απόδειξη αγοράς σας, για να ξεκλειδώσετε όλες τις λειτουργίες Pro.</infoText>
+            <licenseVerifyInfo>Τα στοιχεία που εισάγετε ενδέχεται να επαληθευτούν μέσω Διαδικτύου.</licenseVerifyInfo>
+            <email>Διεύθυνση email</email>
+            <licenseKey>Κλειδί άδειας χρήσης</licenseKey>
+            <buttonUnlock>Ξεκλείδωμα</buttonUnlock>
+            <buttonRestoreLicense>Ανάκτηση άδειας χρήσης</buttonRestoreLicense>
+            <invalidLicenseTitle>Μη έγκυρη άδεια χρήσης!</invalidLicenseTitle>
+            <invalidLicenseText>Βεβαιωθείτε ότι όλα τα γράμματα, τα ψηφία και οι παύλες έχουν εισαχθεί με τη σωστή σειρά. Αν πληκτρολογείτε τους χαρακτήρες χειροκίνητα, δοκιμάστε καλύτερα να τους αντιγράψετε και να τους επικολλήσετε από την απόδειξη αγοράς στο email σας.</invalidLicenseText>
+            <invalidLicenseMismatchOS>Αυτό το κλειδί άδειας χρήσης είναι έγκυρο, αλλά δεν προορίζεται για χρήση σε %1.</invalidLicenseMismatchOS>
+            <thanksTitle>Σας ευχαριστούμε για την αγορά του %1 Pro</thanksTitle>
+            <thanksInfo>Όλοι οι περιορισμοί της δωρεάν έκδοσης έχουν αφαιρεθεί. Ελπίζουμε να απολαύσετε τη χρήση της εφαρμογής!</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>

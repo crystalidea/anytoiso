@@ -70,12 +70,6 @@
         <LiteVersionLimitText>AnyToISO 简化版&lt;b&gt;仅用于 CD 镜像&lt;/b&gt;（不超过 870 MB）。如果用于更大的文件（DVD 及以上)请&lt;a href="purchase"&gt;购买专业版&lt;/a&gt;。你可以通过购买获得注册码&lt;a href="unlock"&gt;解锁软件&lt;/a&gt;。</LiteVersionLimitText>
         <buttonPurchasePro>购买专业版...</buttonPurchasePro>
     </LiteVersionDialog>
-    <EnterKeyDialog>
-        <Caption>输入注册码</Caption>
-        <EnterKeyToUpgradeText>请输入您的注册信息升级到 AnyToISO 专业版。</EnterKeyToUpgradeText>
-        <RegName>注册名：</RegName>
-        <RegCode>注册码：</RegCode>
-    </EnterKeyDialog>
     <AboutDialog>
         <Caption>关于 AnyToISO</Caption>
         <Website>网站：</Website>
@@ -104,7 +98,6 @@
         <NotEnoughDiskSpace>目标驱动器空闲空间不足（仅剩余 %1）。\n\n是否继续？</NotEnoughDiskSpace>
         <ISOAlreadyExists>目标 ISO文件\n%1\n已存在。是否覆盖？</ISOAlreadyExists>
         <FolderAlreadyExists>目标文件夹\n%1\n已存在，是否使用同名文件覆盖所有已存在文件？</FolderAlreadyExists>
-        <RestartProgram>重启程序以完成注册。\n\n是否重启程序？</RestartProgram>
         <CancelOperation>是否确定终止当前操作？</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -308,5 +301,19 @@
             <buttonYes>是</buttonYes>
             <buttonNo>否</buttonNo>
         </QMessageBoxEx>
+        <AppLicenseActivateDialog>
+            <title>解锁Pro版本</title>
+            <infoText>请输入购买%1时使用的电子邮箱地址和收据中的许可序列号，以解锁全部Pro功能。</infoText>
+            <licenseVerifyInfo>您输入的信息可能会通过互联网进行验证。</licenseVerifyInfo>
+            <email>电子邮箱</email>
+            <licenseKey>许可序列号</licenseKey>
+            <buttonUnlock>解锁</buttonUnlock>
+            <buttonRestoreLicense>恢复许可</buttonRestoreLicense>
+            <invalidLicenseTitle>无效许可!</invalidLicenseTitle>
+            <invalidLicenseText>确保以正确的顺序输入所有字母，数字和破折号。如果您手动输入该号码，请尝试从您的电子邮件收据中复制并粘贴该号码。</invalidLicenseText>
+            <invalidLicenseMismatchOS>您提供的序列号是有效的，但无法在%1上激活。</invalidLicenseMismatchOS>
+            <thanksTitle>感谢您购买%1 Pro</thanksTitle>
+            <thanksInfo>免费版的所有限制已被解除，我们希望您喜欢使用本应用！</thanksInfo>
+        </AppLicenseActivateDialog>
     </core>
 </LanguageStrings>
