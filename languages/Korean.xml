@@ -40,6 +40,7 @@
             <buttonRefresh>새로 고침</buttonRefresh>
             <buttonBrowseISO>찾아보기...</buttonBrowseISO>
             <NoDiskInserted>삽입된 CD/DVD 디스크가 없습니다</NoDiskInserted>
+            <LoadingDrives>사용 가능한 광학 드라이브를 불러오는 중...</LoadingDrives>
             <buttonMakeISO>ISO 만들기</buttonMakeISO>
             <buttonMakeBinCue>BIN/CUE 이미지 만들기</buttonMakeBinCue>
             <chooseISOOrBinCueImage>ISO 또는 BIN/CUE 이미지 파일을 선택해 주세요</chooseISOOrBinCueImage>
@@ -70,6 +71,15 @@
         <LiteVersionLimitText>AnyToISO 라이트 버전은 &lt;b&gt;CD 이미지만&lt;/b&gt; 지원합니다 (최대 870MB). 더 큰 파일 (DVD 등)을 사용하려면 &lt;a href="purchase"&gt;Professional 버전을 구매하세요&lt;/a&gt;. 구매 후 &lt;a href="unlock"&gt;소프트웨어 잠금 해제&lt;/a&gt; 등록 코드를 받으실 수 있습니다.</LiteVersionLimitText>
         <buttonPurchasePro>Pro 버전 구입...</buttonPurchasePro>
     </LiteVersionDialog>
+    <LicenseKey>
+        <NotPortable>이 라이선스 키는 AnyToISO 설치 버전용입니다. 포터블 버전에는 포터블 라이선스가 필요합니다.</NotPortable>
+        <PortableTitle>AnyToISO를 실행하면 포터블 복사본으로 다시 시작됩니다</PortableTitle>
+        <PortableText>이는 포터블 라이선스입니다. AnyToISO는 레지스트리 대신 프로그램 옆의 anytoiso_portable.ini에 설정과 라이선스를 유지합니다.</PortableText>
+        <Version3KeyTitle>이 라이선스 키는 AnyToISO 3.x용입니다</Version3KeyTitle>
+        <Version3FoundTitle>AnyToISO 3 라이선스</Version3FoundTitle>
+        <Version3UpgradeText>AnyToISO 4는 새로운 유형의 라이선스 키를 사용하므로 버전 3의 키로는 잠금을 해제할 수 없습니다.\n\nAnyToISO 3 라이선스 소유자는 50% 할인을 받고 AnyToISO 4로 업그레이드할 수 있습니다.</Version3UpgradeText>
+        <Version3UpgradeButton>50% 할인된 가격으로 구매</Version3UpgradeButton>
+    </LicenseKey>
     <AboutDialog>
         <Caption>AnyToISO 정보</Caption>
         <Website>웹사이트:</Website>
@@ -98,6 +108,7 @@
         <NotEnoughDiskSpace>선택한 드라이브에 사용 가능한 디스크 공간이 충분하지 않은 것 같습니다(%1만).\n계속하시겠습니까?</NotEnoughDiskSpace>
         <ISOAlreadyExists>대상 ISO 파일\n%1\n이(가) 이미 존재합니다. 덮어쓰시겠습니까?</ISOAlreadyExists>
         <FolderAlreadyExists>대상 폴더\n%1\n이(가) 이미 존재합니다. 같은 이름의 모든 기존 파일을 덮어쓰시겠습니까?</FolderAlreadyExists>
+        <FilesAlreadyExist>이 대상 파일들은 이미 존재합니다:\n%1\n내용을 덮어쓰시겠습니까?</FilesAlreadyExist>
         <CancelOperation>현재 작업을 종료하시겠습니까?</CancelOperation>
     </Messages>
     <StatusMessages>
@@ -112,6 +123,10 @@
         <ISOImageTypeFound>ISO 이미지 (유형 %1) 발견</ISOImageTypeFound>
         <CannotOpenSourceFile>원본 파일을 열 수 없습니다</CannotOpenSourceFile>
         <CannotOpenDestFile>대상 파일을 열 수 없습니다. 파일 이름과 액세스 권한을 확인해 주세요</CannotOpenDestFile>
+        <DestinationNotSpecified>대상 경로가 지정되지 않았습니다</DestinationNotSpecified>
+        <DestinationIsFolder>대상 %1은 폴더입니다. 이미지 파일 이름을 지정해 주세요</DestinationIsFolder>
+        <DestinationIsFile>대상 %1은 파일입니다. 폴더를 지정해 주세요</DestinationIsFile>
+        <OutputIsSource>출력 파일은 원본 이미지 또는 그 파일들 중 하나가 아니어야 합니다</OutputIsSource>
         <OperationTerminated>사용자가 작업을 종료했습니다.</OperationTerminated>
         <OperationCompleted>작업이 완료되었습니다.</OperationCompleted>
         <ClickToOpenISOInExplorer>탐색기에서 출력 ISO 파일을 열려면, &lt;a href="_open_local_file"&gt;여기&lt;/a&gt;를 클릭하세요</ClickToOpenISOInExplorer>
@@ -119,6 +134,7 @@
         <ClickToOpenOutFolder>출력 폴더를 열려면, &lt;a href="_open_local_file"&gt;여기&lt;/a&gt;를 클릭하세요</ClickToOpenOutFolder>
         <DiskToISO>
             <OpeningDevice>미디어 장치를 여는 중, 잠시만 기다려 주세요...</OpeningDevice>
+            <CheckingDisc>디스크를 확인하는 중, 잠시만 기다려 주세요...</CheckingDisc>
             <TotalDataSize>전체 데이터 크기는 %1 입니다.</TotalDataSize>
             <CreatingISO>ISO 만드는 중...</CreatingISO>
             <CannotCreateFromAudio>멀티 세션 디스크나 오디오 디스크의 ISO 이미지를 생성할 수 없습니다. 지원팀에 문의하여 도움을 요청하세요.</CannotCreateFromAudio>
@@ -140,7 +156,13 @@
             <WritingTrack>트랙 %1을 쓰는 중, 트랙 길이는 %2 섹터입니다</WritingTrack>
             <DiskReadingStopped>%1에서 읽기가 중지되었습니다</DiskReadingStopped>
             <TrackReadingStopped>%1에서 읽기가 중지되었습니다. 다음 트랙으로 계속합니다.</TrackReadingStopped>
+            <ImageIncomplete>이미지는 생성되었지만, %1 섹터 (%2)를 읽을 수 없어 0으로 채워졌습니다. 읽을 수 없는 섹터: %3</ImageIncomplete>
+            <WriteFailed>출력 파일에 쓰지 못함: %1</WriteFailed>
+            <DiskSizeAdjusted>디스크 크기: 보고된 섹터 수 %1, 읽을 섹터 수 %2 (%3)</DiskSizeAdjusted>
         </DiskToISO>
+        <BinCue>
+            <MultipleFilesNotSupported>이 CUE 시트는 하나 이상의 데이터 파일을 참조하며, 이는 지원되지 않습니다.</MultipleFilesNotSupported>
+        </BinCue>
         <FolderToISO>
             <ScanningFolder>원본 디렉터리를 검색하는 중...</ScanningFolder>
             <DirectorySize>디렉터리 크기는 %1입니다</DirectorySize>
